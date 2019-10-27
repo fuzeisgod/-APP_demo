@@ -1,6 +1,15 @@
 <template>
 	<view>
-		<text class="iconfont"></text>
+		<!-- 图标演示 -->
+		<!-- <text class="iconfont icon-smile" style="font-size: 100rpx;color: red;"></text> -->
+
+
+		<!-- 动画使用方式一：点击效果 -->
+		<!-- <view style="display: flex;justify-content: center;padding: 50rpx;">
+			<view class="animated faster" hover-class="fadeIn" style="border: 1rpx solid #333333;padding: 20rpx;">点击效果</view>
+		</view> -->
+		<!-- 动画使用方式二：v-if -->
+		<!-- 动画使用方式三：列表渲染 -->
 	</view>
 </template>
 
@@ -8,7 +17,7 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		onLoad() {
@@ -21,5 +30,5 @@
 </script>
 
 <style>
-	
+
 </style>

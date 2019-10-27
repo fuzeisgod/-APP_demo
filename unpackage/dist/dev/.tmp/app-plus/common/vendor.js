@@ -33,9 +33,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 /* 4 */
-/*!**********************************!*\
-  !*** D:/nui-app/社区交友/pages.json ***!
-  \**********************************/
+/*!**********************************************!*\
+  !*** D:/hbuilderx_work/-APP_demo/pages.json ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -65,20 +65,20 @@ eval("module.exports = {\"_from\":\"@dcloudio/uni-stat@next\",\"_id\":\"@dcloudi
 
 /***/ }),
 /* 7 */
-/*!***************************************************!*\
-  !*** D:/nui-app/社区交友/pages.json?{"type":"style"} ***!
-  \***************************************************/
+/*!***************************************************************!*\
+  !*** D:/hbuilderx_work/-APP_demo/pages.json?{"type":"style"} ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default = { \"pages\": { \"pages/index/index\": { \"navigationBarTitleText\": \"uni-app\" } }, \"globalStyle\": { \"navigationBarTextStyle\": \"black\", \"navigationBarTitleText\": \"uni-app\", \"navigationBarBackgroundColor\": \"#F8F8F8\", \"backgroundColor\": \"#F8F8F8\" } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJzR0FBZSxFQUFDLFNBQVEsRUFBQyxxQkFBb0IsRUFBQywwQkFBeUIsU0FBMUIsRUFBckIsRUFBVCxFQUFvRSxlQUFjLEVBQUMsMEJBQXlCLE9BQTFCLEVBQWtDLDBCQUF5QixTQUEzRCxFQUFxRSxnQ0FBK0IsU0FBcEcsRUFBOEcsbUJBQWtCLFNBQWhJLEVBQWxGLEUiLCJmaWxlIjoiNy5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInBhZ2VzXCI6e1wicGFnZXMvaW5kZXgvaW5kZXhcIjp7XCJuYXZpZ2F0aW9uQmFyVGl0bGVUZXh0XCI6XCJ1bmktYXBwXCJ9fSxcImdsb2JhbFN0eWxlXCI6e1wibmF2aWdhdGlvbkJhclRleHRTdHlsZVwiOlwiYmxhY2tcIixcIm5hdmlnYXRpb25CYXJUaXRsZVRleHRcIjpcInVuaS1hcHBcIixcIm5hdmlnYXRpb25CYXJCYWNrZ3JvdW5kQ29sb3JcIjpcIiNGOEY4RjhcIixcImJhY2tncm91bmRDb2xvclwiOlwiI0Y4RjhGOFwifX0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///7\n");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default = { \"pages\": { \"pages/index/index\": { \"usingComponents\": {} } }, \"globalStyle\": { \"navigationBarTextStyle\": \"black\", \"navigationBarTitleText\": \"社区交友\", \"navigationBarBackgroundColor\": \"#FFFFFF\", \"backgroundColor\": \"#FFFFFF\" } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJzR0FBZSxFQUFDLFNBQVEsRUFBQyxxQkFBb0IsRUFBQyxtQkFBa0IsRUFBbkIsRUFBckIsRUFBVCxFQUFzRCxlQUFjLEVBQUMsMEJBQXlCLE9BQTFCLEVBQWtDLDBCQUF5QixNQUEzRCxFQUFrRSxnQ0FBK0IsU0FBakcsRUFBMkcsbUJBQWtCLFNBQTdILEVBQXBFLEUiLCJmaWxlIjoiNy5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInBhZ2VzXCI6e1wicGFnZXMvaW5kZXgvaW5kZXhcIjp7XCJ1c2luZ0NvbXBvbmVudHNcIjp7fX19LFwiZ2xvYmFsU3R5bGVcIjp7XCJuYXZpZ2F0aW9uQmFyVGV4dFN0eWxlXCI6XCJibGFja1wiLFwibmF2aWdhdGlvbkJhclRpdGxlVGV4dFwiOlwi56S+5Yy65Lqk5Y+LXCIsXCJuYXZpZ2F0aW9uQmFyQmFja2dyb3VuZENvbG9yXCI6XCIjRkZGRkZGXCIsXCJiYWNrZ3JvdW5kQ29sb3JcIjpcIiNGRkZGRkZcIn19Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///7\n");
 
 /***/ }),
 /* 8 */
-/*!**************************************************!*\
-  !*** D:/nui-app/社区交友/pages.json?{"type":"stat"} ***!
-  \**************************************************/
+/*!**************************************************************!*\
+  !*** D:/hbuilderx_work/-APP_demo/pages.json?{"type":"stat"} ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
