@@ -35,7 +35,6 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
       "id": "1",
       "kernel": "WKWebview",
       "uni-app": "auto"
@@ -84,6 +83,12 @@
       }
     },
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#fff",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "compilerVersion": "2.3.7",
       "control": "v8",
@@ -92,6 +97,43 @@
       "nvue": {
         "flex-direction": "column"
       }
+    },
+    "tabBar": {
+      "color": "#323232",
+      "selectedColor": "#ED6384",
+      "backgroundColor": "#fff",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "static/tabbar/home.png",
+          "selectedIconPath": "static/tabbar/home1.png"
+        },
+        {
+          "pagePath": "pages/news/news",
+          "text": "动态",
+          "iconPath": "static/tabbar/news.png",
+          "selectedIconPath": "static/tabbar/news1.png"
+        },
+        {
+          "pagePath": "pages/msg/msg",
+          "text": "消息",
+          "iconPath": "static/tabbar/msg.png",
+          "selectedIconPath": "static/tabbar/msg1.png"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "static/tabbar/my.png",
+          "selectedIconPath": "static/tabbar/my1.png"
+        }
+      ],
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   }
 }
