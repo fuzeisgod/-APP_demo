@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/demo/demo",
     "pages/index/index",
     "pages/news/news",
     "pages/msg/msg",
@@ -20,26 +21,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "static/tabbar/home.png",
-        "selectedIconPath": "static/tabbar/home1.png"
+        "iconPath": "static/tabbar/home1.png",
+        "selectedIconPath": "static/tabbar/home.png"
       },
       {
         "pagePath": "pages/news/news",
         "text": "动态",
-        "iconPath": "static/tabbar/news.png",
-        "selectedIconPath": "static/tabbar/news1.png"
+        "iconPath": "static/tabbar/news1.png",
+        "selectedIconPath": "static/tabbar/news.png"
       },
       {
         "pagePath": "pages/msg/msg",
         "text": "消息",
-        "iconPath": "static/tabbar/msg.png",
-        "selectedIconPath": "static/tabbar/msg1.png"
+        "iconPath": "static/tabbar/msg1.png",
+        "selectedIconPath": "static/tabbar/msg.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "static/tabbar/my.png",
-        "selectedIconPath": "static/tabbar/my1.png"
+        "iconPath": "static/tabbar/my1.png",
+        "selectedIconPath": "static/tabbar/my.png"
       }
     ]
   },

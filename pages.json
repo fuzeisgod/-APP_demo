@@ -1,22 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/demo/demo",
+			"style": {
+				"navigationBarTitleText": "view和text组件"
+			}
+		}, {
 			"path": "pages/index/index",
 			"style": {}
+		}, {
+			"path": "pages/news/news",
+			"style": {}
+		}, {
+			"path": "pages/msg/msg",
+			"style": {}
+		}, {
+			"path": "pages/my/my",
+			"style": {}
 		}
-	    ,{
-            "path" : "pages/news/news",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/msg/msg",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/my/my",
-            "style" : {}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "社区交友",
@@ -26,28 +28,28 @@
 	"tabBar": {
 		"color": "#323232",
 		"selectedColor": "#ED6384",
-		"backgroundColor":"#fff",
-		"borderStyle":"black",
-		"list":[{
-			"pagePath":"pages/index/index",
-			"text":"首页",
-			"iconPath":"static/tabbar/home.png",
-			"selectedIconPath":"static/tabbar/home1.png"
-		},{
-			"pagePath":"pages/news/news",
-			"text":"动态",
-			"iconPath":"static/tabbar/news.png",
-			"selectedIconPath":"static/tabbar/news1.png"
-		},{
-			"pagePath":"pages/msg/msg",
-			"text":"消息",
-			"iconPath":"static/tabbar/msg.png",
-			"selectedIconPath":"static/tabbar/msg1.png"
-		},{
-			"pagePath":"pages/my/my",
-			"text":"我的",
-			"iconPath":"static/tabbar/my.png",
-			"selectedIconPath":"static/tabbar/my1.png"
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/tabbar/home1.png",
+			"selectedIconPath": "static/tabbar/home.png"
+		}, {
+			"pagePath": "pages/news/news",
+			"text": "动态",
+			"iconPath": "static/tabbar/news1.png",
+			"selectedIconPath": "static/tabbar/news.png"
+		}, {
+			"pagePath": "pages/msg/msg",
+			"text": "消息",
+			"iconPath": "static/tabbar/msg1.png",
+			"selectedIconPath": "static/tabbar/msg.png"
+		}, {
+			"pagePath": "pages/my/my",
+			"text": "我的",
+			"iconPath": "static/tabbar/my1.png",
+			"selectedIconPath": "static/tabbar/my.png"
 		}]
 	}
 }

@@ -1,5 +1,6 @@
 <template>
 	<view>
+		首页
 		<!-- 图标演示 -->
 		<!-- <text class="iconfont icon-smile" style="font-size: 100rpx;color: red;"></text> -->
 
