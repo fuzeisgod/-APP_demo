@@ -1,10 +1,38 @@
 <template>
 	<view>
-		<!-- <view hover-class="view-box-hover rubberBand" hover-stay-time="800" class="view-box animated">第一个view</view> -->
 
-		<!-- <text :selectable="true">这是text \n 这是text \n 这是text \n 这是text</text> -->
+		<!-- <view class="box" :class="['bor','fs']">box</view> -->
+		<!-- <view class="box" :class="[class1,class2]">box</view> -->
+		<!-- <view class="box" :class="[age>10?class1:'',sex=='男'?class2:'']">box</view> -->
+		<!-- <view class="box" :class="{'bor':isTrue}">box</view> -->
+		<!-- <view class="box" :style="{'color':Color,'font-size':myFontsize}">box</view> -->
+
+		<!-- <template>
+			<view>
+				<template v-if="isTrue1">
+					<view class="box">box</view>
+				</template>
+				<template v-else>
+					<view class="box bor">box</view>
+				</template>
+			</view>
+		</template>
+
+		<template>
+			<view>
+				<template v-if="isTrue2">
+					<view class="box">box</view>
+				</template>
+				<template v-else>
+					<view class="box fs">box</view>
+				</template>
+			</view>
+		</template> -->
+
+		<view class="font">{{name}}</view>
 		
-		<view class="view-box" id="view2"></view>
+		<button type="primary" @tap="change">button</button>
+		
 	</view>
 </template>
 
@@ -12,33 +40,54 @@
 	export default {
 		data() {
 			return {
-				
+				class1: 'bor',
+				class2: 'fs',
+				age: 10,
+				sex: '男',
+				isTrue1: false,
+				isTrue2: false,
+				Color: 'red',
+				myFontsize: '80rpx',
+				name: "我是一个名字"
 			}
 		},
 		methods: {
-
+			change(){
+				this.name = '被修改了'
+			}
+		},
+		watch:{
+			// 当 data 中 的 name 发生变化，执行以下函数
+			name(val){
+				console.log(val)
+			}
 		}
 	}
 </script>
 
 <style>
-	.view-box {
-		width: 200rpx;
-		height: 200rpx;
-		background: #007AFF;
+	.box {
+		background: #09BB07;
 		color: #FFFFFF;
-		margin: 100rpx;
+		width: 350rpx;
+		height: 350rpx;
+		border-radius: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-size: 50rpx;
 	}
 
-	.view-box-hover {
-		background: red;
+	.bor {
+		border: 10rpx solid #007AFF;
 	}
-	
-	#view2{
-		background: yellow;
-		width: 375rpx;
+
+	.fs {
+		font-size: 80rpx;
+		color: red;
+	}
+
+	.font {
+		font-size: 50rpx;
 	}
 </style>
