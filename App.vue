@@ -24,4 +24,8 @@
 	@import "./common/iconfont.css";
 	/* 动画库 */
 	@import "./common/animate.css";
+	/* 自定义css库 */
+	@import "./common/my.css";
+	/* 全局样式 */
+	@import "./common/common.css";
 </style>

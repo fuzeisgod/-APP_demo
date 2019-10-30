@@ -33,9 +33,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 /* 4 */
-/*!**********************************************!*\
-  !*** D:/hbuilderx_work/-APP_demo/pages.json ***!
-  \**********************************************/
+/*!***************************************!*\
+  !*** D:/nui-app/-APP_demo/pages.json ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -65,20 +65,20 @@ eval("module.exports = {\"_from\":\"@dcloudio/uni-stat@next\",\"_id\":\"@dcloudi
 
 /***/ }),
 /* 7 */
-/*!***************************************************************!*\
-  !*** D:/hbuilderx_work/-APP_demo/pages.json?{"type":"style"} ***!
-  \***************************************************************/
+/*!********************************************************!*\
+  !*** D:/nui-app/-APP_demo/pages.json?{"type":"style"} ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default = { \"pages\": { \"pages/demo/demo\": { \"navigationBarTitleText\": \"view和text组件\", \"usingComponents\": {} }, \"pages/index/index\": { \"titleNView\": { \"searchInput\": { \"backgroundColor\": \"#F5F4F2\", \"borderRadius\": \"4px\", \"disabled\": true, \"placeholder\": \"搜索帖子\", \"placeholderColor\": \"#6D6C67\" }, \"buttons\": [{ \"color\": \"#333333\", \"colorPressed\": \"#FD597C\", \"float\": \"right\", \"fontSize\": \"20px\", \"fontSrc\": \"static/iconfont.ttf\", \"text\": \"\" }] }, \"usingComponents\": {} }, \"pages/news/news\": { \"usingComponents\": {} }, \"pages/msg/msg\": { \"usingComponents\": {} }, \"pages/my/my\": { \"usingComponents\": {} } }, \"globalStyle\": { \"navigationBarTextStyle\": \"black\", \"navigationBarTitleText\": \"社区交友\", \"navigationBarBackgroundColor\": \"#FFFFFF\", \"backgroundColor\": \"#FFFFFF\" } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJzR0FBZSxFQUFDLFNBQVEsRUFBQyxtQkFBa0IsRUFBQywwQkFBeUIsYUFBMUIsRUFBd0MsbUJBQWtCLEVBQTFELEVBQW5CLEVBQWlGLHFCQUFvQixFQUFDLGNBQWEsRUFBQyxlQUFjLEVBQUMsbUJBQWtCLFNBQW5CLEVBQTZCLGdCQUFlLEtBQTVDLEVBQWtELFlBQVcsSUFBN0QsRUFBa0UsZUFBYyxNQUFoRixFQUF1RixvQkFBbUIsU0FBMUcsRUFBZixFQUFvSSxXQUFVLENBQUMsRUFBQyxTQUFRLFNBQVQsRUFBbUIsZ0JBQWUsU0FBbEMsRUFBNEMsU0FBUSxPQUFwRCxFQUE0RCxZQUFXLE1BQXZFLEVBQThFLFdBQVUscUJBQXhGLEVBQThHLFFBQU8sR0FBckgsRUFBRCxDQUE5SSxFQUFkLEVBQXlSLG1CQUFrQixFQUEzUyxFQUFyRyxFQUFvWixtQkFBa0IsRUFBQyxtQkFBa0IsRUFBbkIsRUFBdGEsRUFBNmIsaUJBQWdCLEVBQUMsbUJBQWtCLEVBQW5CLEVBQTdjLEVBQW9lLGVBQWMsRUFBQyxtQkFBa0IsRUFBbkIsRUFBbGYsRUFBVCxFQUFtaEIsZUFBYyxFQUFDLDBCQUF5QixPQUExQixFQUFrQywwQkFBeUIsTUFBM0QsRUFBa0UsZ0NBQStCLFNBQWpHLEVBQTJHLG1CQUFrQixTQUE3SCxFQUFqaUIsRSIsImZpbGUiOiI3LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wicGFnZXNcIjp7XCJwYWdlcy9kZW1vL2RlbW9cIjp7XCJuYXZpZ2F0aW9uQmFyVGl0bGVUZXh0XCI6XCJ2aWV35ZKMdGV4dOe7hOS7tlwiLFwidXNpbmdDb21wb25lbnRzXCI6e319LFwicGFnZXMvaW5kZXgvaW5kZXhcIjp7XCJ0aXRsZU5WaWV3XCI6e1wic2VhcmNoSW5wdXRcIjp7XCJiYWNrZ3JvdW5kQ29sb3JcIjpcIiNGNUY0RjJcIixcImJvcmRlclJhZGl1c1wiOlwiNHB4XCIsXCJkaXNhYmxlZFwiOnRydWUsXCJwbGFjZWhvbGRlclwiOlwi5pCc57Si5biW5a2QXCIsXCJwbGFjZWhvbGRlckNvbG9yXCI6XCIjNkQ2QzY3XCJ9LFwiYnV0dG9uc1wiOlt7XCJjb2xvclwiOlwiIzMzMzMzM1wiLFwiY29sb3JQcmVzc2VkXCI6XCIjRkQ1OTdDXCIsXCJmbG9hdFwiOlwicmlnaHRcIixcImZvbnRTaXplXCI6XCIyMHB4XCIsXCJmb250U3JjXCI6XCJzdGF0aWMvaWNvbmZvbnQudHRmXCIsXCJ0ZXh0XCI6XCLumahcIn1dfSxcInVzaW5nQ29tcG9uZW50c1wiOnt9fSxcInBhZ2VzL25ld3MvbmV3c1wiOntcInVzaW5nQ29tcG9uZW50c1wiOnt9fSxcInBhZ2VzL21zZy9tc2dcIjp7XCJ1c2luZ0NvbXBvbmVudHNcIjp7fX0sXCJwYWdlcy9teS9teVwiOntcInVzaW5nQ29tcG9uZW50c1wiOnt9fX0sXCJnbG9iYWxTdHlsZVwiOntcIm5hdmlnYXRpb25CYXJUZXh0U3R5bGVcIjpcImJsYWNrXCIsXCJuYXZpZ2F0aW9uQmFyVGl0bGVUZXh0XCI6XCLnpL7ljLrkuqTlj4tcIixcIm5hdmlnYXRpb25CYXJCYWNrZ3JvdW5kQ29sb3JcIjpcIiNGRkZGRkZcIixcImJhY2tncm91bmRDb2xvclwiOlwiI0ZGRkZGRlwifX0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///7\n");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default = { \"pages\": { \"pages/index/index\": { \"titleNView\": { \"searchInput\": { \"backgroundColor\": \"#F5F4F2\", \"borderRadius\": \"4px\", \"disabled\": true, \"placeholder\": \"搜索帖子\", \"placeholderColor\": \"#6D6C67\" }, \"buttons\": [{ \"color\": \"#333333\", \"colorPressed\": \"#FD597C\", \"float\": \"right\", \"fontSize\": \"20px\", \"fontSrc\": \"static/iconfont.ttf\", \"text\": \"\" }] } }, \"pages/news/news\": {}, \"pages/msg/msg\": {}, \"pages/my/my\": {}, \"pages/demo/demo\": { \"navigationBarTitleText\": \"view和text组件\" } }, \"globalStyle\": { \"navigationBarTextStyle\": \"black\", \"navigationBarTitleText\": \"社区交友\", \"navigationBarBackgroundColor\": \"#FFFFFF\", \"backgroundColor\": \"#FFFFFF\" } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJzR0FBZSxFQUFDLFNBQVEsRUFBQyxxQkFBb0IsRUFBQyxjQUFhLEVBQUMsZUFBYyxFQUFDLG1CQUFrQixTQUFuQixFQUE2QixnQkFBZSxLQUE1QyxFQUFrRCxZQUFXLElBQTdELEVBQWtFLGVBQWMsTUFBaEYsRUFBdUYsb0JBQW1CLFNBQTFHLEVBQWYsRUFBb0ksV0FBVSxDQUFDLEVBQUMsU0FBUSxTQUFULEVBQW1CLGdCQUFlLFNBQWxDLEVBQTRDLFNBQVEsT0FBcEQsRUFBNEQsWUFBVyxNQUF2RSxFQUE4RSxXQUFVLHFCQUF4RixFQUE4RyxRQUFPLEdBQXJILEVBQUQsQ0FBOUksRUFBZCxFQUFyQixFQUErUyxtQkFBa0IsRUFBalUsRUFBb1UsaUJBQWdCLEVBQXBWLEVBQXVWLGVBQWMsRUFBclcsRUFBd1csbUJBQWtCLEVBQUMsMEJBQXlCLGFBQTFCLEVBQTFYLEVBQVQsRUFBNmEsZUFBYyxFQUFDLDBCQUF5QixPQUExQixFQUFrQywwQkFBeUIsTUFBM0QsRUFBa0UsZ0NBQStCLFNBQWpHLEVBQTJHLG1CQUFrQixTQUE3SCxFQUEzYixFIiwiZmlsZSI6IjcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJwYWdlc1wiOntcInBhZ2VzL2luZGV4L2luZGV4XCI6e1widGl0bGVOVmlld1wiOntcInNlYXJjaElucHV0XCI6e1wiYmFja2dyb3VuZENvbG9yXCI6XCIjRjVGNEYyXCIsXCJib3JkZXJSYWRpdXNcIjpcIjRweFwiLFwiZGlzYWJsZWRcIjp0cnVlLFwicGxhY2Vob2xkZXJcIjpcIuaQnOe0ouW4luWtkFwiLFwicGxhY2Vob2xkZXJDb2xvclwiOlwiIzZENkM2N1wifSxcImJ1dHRvbnNcIjpbe1wiY29sb3JcIjpcIiMzMzMzMzNcIixcImNvbG9yUHJlc3NlZFwiOlwiI0ZENTk3Q1wiLFwiZmxvYXRcIjpcInJpZ2h0XCIsXCJmb250U2l6ZVwiOlwiMjBweFwiLFwiZm9udFNyY1wiOlwic3RhdGljL2ljb25mb250LnR0ZlwiLFwidGV4dFwiOlwi7pmoXCJ9XX19LFwicGFnZXMvbmV3cy9uZXdzXCI6e30sXCJwYWdlcy9tc2cvbXNnXCI6e30sXCJwYWdlcy9teS9teVwiOnt9LFwicGFnZXMvZGVtby9kZW1vXCI6e1wibmF2aWdhdGlvbkJhclRpdGxlVGV4dFwiOlwidmlld+WSjHRleHTnu4Tku7ZcIn19LFwiZ2xvYmFsU3R5bGVcIjp7XCJuYXZpZ2F0aW9uQmFyVGV4dFN0eWxlXCI6XCJibGFja1wiLFwibmF2aWdhdGlvbkJhclRpdGxlVGV4dFwiOlwi56S+5Yy65Lqk5Y+LXCIsXCJuYXZpZ2F0aW9uQmFyQmFja2dyb3VuZENvbG9yXCI6XCIjRkZGRkZGXCIsXCJiYWNrZ3JvdW5kQ29sb3JcIjpcIiNGRkZGRkZcIn19Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///7\n");
 
 /***/ }),
 /* 8 */
-/*!**************************************************************!*\
-  !*** D:/hbuilderx_work/-APP_demo/pages.json?{"type":"stat"} ***!
-  \**************************************************************/
+/*!*******************************************************!*\
+  !*** D:/nui-app/-APP_demo/pages.json?{"type":"stat"} ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
