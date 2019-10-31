@@ -52,5 +52,7 @@
   },
   "appname": "社区交友",
   "compilerVersion": "2.3.7",
-  "usingComponents": {}
+  "usingComponents": {
+    "divider": "/components/common/divider"
+  }
 }

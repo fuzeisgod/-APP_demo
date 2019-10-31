@@ -5476,4 +5476,7 @@ to {
 .bg-main{
 	background-color: #FF4A6A;
 }
+.text-main{
+	color: #FF4A6A;
+}
 

@@ -1,7 +1,9 @@
 <template>
 	<view>
 		<block v-for="(item,index) in list" :key="index">
-			<common-list :item="item" :index="index"></common-list>
+			<common-list :item="item" :index="index" @follow="follow" @doSupport="doSupport"></common-list>
+			<!-- 全局分割线 -->
+			<divider></divider>
 		</block>
 	</view>
 </template>
@@ -20,9 +22,12 @@
 					title: "我是标题",
 					titlepic: "../../static/bgimg/1.jpg",
 					support: {
-						type: "support",
-						support_count: 1,
-						unsupport_count: 2
+						// 顶操作 type 为 "support",
+						// 踩操作 type 为 "unsupport",
+						// 未操作 type 为 ""
+						type: "",
+						support_count: 0,
+						unsupport_count: 0
 					},
 					comment_count: 2,
 					share_num: 2
@@ -32,9 +37,9 @@
 					newstime: "2019-10-20 下午04:30",
 					isFollow: false,
 					title: "我是标题",
-					titlepic: "../../static/bgimg/1.jpg",
+					titlepic: "",
 					support: {
-						type: "support",
+						type: "",
 						support_count: 1,
 						unsupport_count: 2
 					},
@@ -43,13 +48,46 @@
 				}]
 			}
 		},
+		methods: {
+			// 关注
+			follow(e) {
+				this.list[e].isFollow = true
+				uni.showToast({
+					title: '关注成功!'
+				})
+			},
+			doSupport(e) {
+				// 拿到当前对象
+				let item = this.list[e.index]
+				let msg = e.type === 'support' ? '顶' : '踩'
+				// 之前没有操作过
+				if (item.support.type === '') {
+					item.support[e.type + '_count']++;
+				} else if (item.support.type === 'support' && e.type === 'unsupport') { // 之前顶了
+					// 顶 - 1
+					if(item.support.support_count > 0){
+						item.support.support_count--;
+					}
+					// 踩 + 1
+					item.support.unsupport_count++;
+				} else if (item.support.type === 'unsupport' && e.type === 'support') { // 之前踩了
+					// 踩 - 1
+					if(item.support.unsupport_count > 0){
+						item.support.unsupport_count--;
+					}
+					// 顶 + 1
+					item.support.support_count++;
+				}
+				item.support.type = e.type
+				uni.showToast({
+					title: msg + '成功'
+				})
+			}
+		},
 		components: {
 			commonList
 		},
 		onLoad() {
-
-		},
-		methods: {
 
 		}
 	}
