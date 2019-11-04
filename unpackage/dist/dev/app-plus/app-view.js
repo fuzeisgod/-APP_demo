@@ -1143,19 +1143,6 @@ function gz$gwx_4(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'index'])
-Z([3,'item'])
-Z([[7],[3,'list']])
-Z(z[0])
-Z([3,'__l'])
-Z([3,'__e'])
-Z(z[5])
-Z([[4],[[5],[[5],[[4],[[5],[[5],[1,'^follow']],[[4],[[5],[[4],[[5],[1,'follow']]]]]]]],[[4],[[5],[[5],[1,'^doSupport']],[[4],[[5],[[4],[[5],[1,'doSupport']]]]]]]]])
-Z([[7],[3,'index']])
-Z([[7],[3,'item']])
-Z([[2,'+'],[1,'1-'],[[7],[3,'index']]])
-Z(z[4])
-Z([[2,'+'],[1,'2-'],[[7],[3,'index']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
@@ -1299,17 +1286,6 @@ d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
 var oHB=_n('view')
-var xIB=_v()
-_(oHB,xIB)
-var oJB=function(cLB,fKB,hMB,gg){
-var cOB=_mz(z,'common-list',['bind:__l',4,'bind:doSupport',1,'bind:follow',2,'data-event-opts',3,'index',4,'item',5,'vueId',6],[],cLB,fKB,gg)
-_(hMB,cOB)
-var oPB=_mz(z,'divider',['bind:__l',11,'vueId',1],[],cLB,fKB,gg)
-_(hMB,oPB)
-return hMB
-}
-xIB.wxXCkey=4
-_2z(z,2,oJB,e,s,gg,xIB,'item','index','index')
 _(r,oHB)
 return r
 }
@@ -1317,30 +1293,30 @@ e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var aRB=_n('view')
-var tSB=_oz(z,0,e,s,gg)
-_(aRB,tSB)
-_(r,aRB)
+var oJB=_n('view')
+var fKB=_oz(z,0,e,s,gg)
+_(oJB,fKB)
+_(r,oJB)
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var bUB=_n('view')
-var oVB=_oz(z,0,e,s,gg)
-_(bUB,oVB)
-_(r,bUB)
+var hMB=_n('view')
+var oNB=_oz(z,0,e,s,gg)
+_(hMB,oNB)
+_(r,hMB)
 return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var oXB=_n('view')
-var fYB=_oz(z,0,e,s,gg)
-_(oXB,fYB)
-_(r,oXB)
+var oPB=_n('view')
+var lQB=_oz(z,0,e,s,gg)
+_(oPB,lQB)
+_(r,oPB)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}

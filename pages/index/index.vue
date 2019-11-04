@@ -1,10 +1,17 @@
 <template>
 	<view>
-		<block v-for="(item,index) in list" :key="index">
-			<common-list :item="item" :index="index" @follow="follow" @doSupport="doSupport"></common-list>
+		
+		<!-- 顶部选项卡 -->
+		<scroll-view scroll-x class="scroll-row">
+			<view class="scroll-row-item" v-for="i in 20" :key="i">{{i}}</view>
+		</scroll-view>
+		
+		
+		<!-- <block v-for="(item,index) in list" :key="index">
+			<common-list :item="item" :index="index" @follow="follow" @doSupport="doSupport"></common-list> -->
 			<!-- 全局分割线 -->
-			<divider></divider>
-		</block>
+			<!-- <divider></divider>
+		</block> -->
 	</view>
 </template>
 
