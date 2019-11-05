@@ -1,16 +1,24 @@
 <template>
 	<view>
-		
+
 		<!-- 顶部选项卡 -->
-		<scroll-view scroll-x class="scroll-row">
-			<view class="scroll-row-item" v-for="i in 20" :key="i">{{i}}</view>
+		<scroll-view scroll-x :scroll-into-view="scrollInto" scroll-with-animation class="scroll-row" style="height: 100rpx;">
+			<view class="scroll-row-item px-3 py-2 font-md" v-for="(item,index) in tabBars" :key="index" :id="'tab'+index"
+			 :class="tabIndex === index?'text-main font-lg font-weight-bold':''" @click="changeTab(index)">{{item.name}}</view>
 		</scroll-view>
 		
-		
+		<swiper :duration="150" :current="tabIndex" @change="onChangeTab">
+			<swiper-item v-for="(item, index) in tabBars" :key="index">
+				<scroll-view scroll-y="true" >
+					<view v-for="i in 100" :key="i">{{i}}</view>
+				</scroll-view>
+			</swiper-item>
+		</swiper>
+
 		<!-- <block v-for="(item,index) in list" :key="index">
 			<common-list :item="item" :index="index" @follow="follow" @doSupport="doSupport"></common-list> -->
-			<!-- 全局分割线 -->
-			<!-- <divider></divider>
+		<!-- 全局分割线 -->
+		<!-- <divider></divider>
 		</block> -->
 	</view>
 </template>
@@ -21,6 +29,27 @@
 	export default {
 		data() {
 			return {
+				tabIndex: 0,
+				scrollInto: "",
+				tabBars: [{
+					name: "关注"
+				}, {
+					name: "推荐"
+				}, {
+					name: "体育"
+				}, {
+					name: "热点"
+				}, {
+					name: "财经"
+				}, {
+					name: "娱乐"
+				}, {
+					name: "军事"
+				}, {
+					name: "历史"
+				}, {
+					name: "本地"
+				}],
 				list: [{
 					username: "昵称1",
 					userpic: "../../static/default.jpg",
@@ -72,14 +101,14 @@
 					item.support[e.type + '_count']++;
 				} else if (item.support.type === 'support' && e.type === 'unsupport') { // 之前顶了
 					// 顶 - 1
-					if(item.support.support_count > 0){
+					if (item.support.support_count > 0) {
 						item.support.support_count--;
 					}
 					// 踩 + 1
 					item.support.unsupport_count++;
 				} else if (item.support.type === 'unsupport' && e.type === 'support') { // 之前踩了
 					// 踩 - 1
-					if(item.support.unsupport_count > 0){
+					if (item.support.unsupport_count > 0) {
 						item.support.unsupport_count--;
 					}
 					// 顶 + 1
@@ -89,13 +118,30 @@
 				uni.showToast({
 					title: msg + '成功'
 				})
+			},
+			// 切换选项
+			changeTab(index) {
+				if (this.tabIndex === index) {
+					return;
+				}
+				this.tabIndex = index
+				// 滚动到指定元素
+				this.scrollInto = 'tab' + index;
+			},
+			// 监听滑动
+			onChangeTab(e){
+				this.changeTab(e.detail.current)
 			}
 		},
 		components: {
 			commonList
 		},
 		onLoad() {
-
+			let res = uni.getSystemInfo({
+				success:res=>{
+					console.log(res)
+				}
+			})
 		}
 	}
 </script>
