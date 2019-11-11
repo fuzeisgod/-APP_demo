@@ -6,20 +6,28 @@
 			<view class="scroll-row-item px-3 py-2 font-md" v-for="(item,index) in tabBars" :key="index" :id="'tab'+index"
 			 :class="tabIndex === index?'text-main font-lg font-weight-bold':''" @click="changeTab(index)">{{item.name}}</view>
 		</scroll-view>
-		
-		<swiper :duration="150" :current="tabIndex" @change="onChangeTab">
-			<swiper-item v-for="(item, index) in tabBars" :key="index">
-				<scroll-view scroll-y="true" >
-					<view v-for="i in 100" :key="i">{{i}}</view>
+
+		<swiper :duration="150" :current="tabIndex" @change="onChangeTab" :style="'height:' + scrollH + 'px;'">
+			<swiper-item v-for="(item, index) in newsList" :key="index">
+				<scroll-view scroll-y="true" :style="'height:' + scrollH + 'px;'" @scrolltolower="loadmore(index)">
+
+					<!-- 列表 -->
+					<block v-for="(item2,index2) in item.list" :key="index2">
+						<common-list :item="item2" :index="index2" @follow="follow" @doSupport="doSupport"></common-list>
+						<!-- 全局分割线 -->
+						<divider></divider>
+					</block>
+
+					<!-- 上拉加载 -->
+					<view class="flex align-center justify-center py-3">
+						<text class="font text-light-muted">{{item.loadmore}}</text>
+					</view>
+
 				</scroll-view>
 			</swiper-item>
 		</swiper>
 
-		<!-- <block v-for="(item,index) in list" :key="index">
-			<common-list :item="item" :index="index" @follow="follow" @doSupport="doSupport"></common-list> -->
-		<!-- 全局分割线 -->
-		<!-- <divider></divider>
-		</block> -->
+
 	</view>
 </template>
 
@@ -29,6 +37,8 @@
 	export default {
 		data() {
 			return {
+				// 列表高度
+				scrollH: 600,
 				tabIndex: 0,
 				scrollInto: "",
 				tabBars: [{
@@ -50,38 +60,7 @@
 				}, {
 					name: "本地"
 				}],
-				list: [{
-					username: "昵称1",
-					userpic: "../../static/default.jpg",
-					newstime: "2019-10-20 下午04:30",
-					isFollow: false,
-					title: "我是标题",
-					titlepic: "../../static/bgimg/1.jpg",
-					support: {
-						// 顶操作 type 为 "support",
-						// 踩操作 type 为 "unsupport",
-						// 未操作 type 为 ""
-						type: "",
-						support_count: 0,
-						unsupport_count: 0
-					},
-					comment_count: 2,
-					share_num: 2
-				}, {
-					username: "昵称2",
-					userpic: "../../static/default.jpg",
-					newstime: "2019-10-20 下午04:30",
-					isFollow: false,
-					title: "我是标题",
-					titlepic: "",
-					support: {
-						type: "",
-						support_count: 1,
-						unsupport_count: 2
-					},
-					comment_count: 2,
-					share_num: 2
-				}]
+				newsList: []
 			}
 		},
 		methods: {
@@ -129,8 +108,67 @@
 				this.scrollInto = 'tab' + index;
 			},
 			// 监听滑动
-			onChangeTab(e){
+			onChangeTab(e) {
 				this.changeTab(e.detail.current)
+			},
+			// 获取数据
+			getData() {
+				var arr = []
+				for (let i = 0; i < this.tabBars.length; i++) {
+					// 生成列表模板
+					let obj = {
+						// 1.上拉加载更多 2.加载中... 3.没有更多了
+						loadmore:"上拉加载更多",
+						list: [{
+							username: "昵称1",
+							userpic: "../../static/default.jpg",
+							newstime: "2019-10-20 下午04:30",
+							isFollow: false,
+							title: "我是标题",
+							titlepic: "../../static/bgimg/1.jpg",
+							support: {
+								// 顶操作 type 为 "support",
+								// 踩操作 type 为 "unsupport",
+								// 未操作 type 为 ""
+								type: "",
+								support_count: 0,
+								unsupport_count: 0
+							},
+							comment_count: 2,
+							share_num: 2
+						}, {
+							username: "昵称2",
+							userpic: "../../static/default.jpg",
+							newstime: "2019-10-20 下午04:30",
+							isFollow: false,
+							title: "我是标题",
+							titlepic: "",
+							support: {
+								type: "",
+								support_count: 1,
+								unsupport_count: 2
+							},
+							comment_count: 2,
+							share_num: 2
+						}]
+					}
+					arr.push(obj)
+				}
+				this.newsList = arr
+			},
+			// 上拉加载更多
+			loadmore(index){
+				// 拿到当前列表
+				let item = this.newsList[index]
+				// 修改当前列表加载状态
+				item.loadmore = '加载中...'
+				// 模拟数据请求
+				setTimeout(() => {
+					// 加载数据
+					item.list = [...item.list,...item.list]
+					// 恢复加载状态
+					item.loadmore = '上拉加载更多'
+				}, 2000);
 			}
 		},
 		components: {
@@ -138,10 +176,13 @@
 		},
 		onLoad() {
 			let res = uni.getSystemInfo({
-				success:res=>{
-					console.log(res)
+				success: res => {
+					// px
+					this.scrollH = res.windowHeight - uni.upx2px(100)
 				}
 			})
+			// 根据选项生成列表
+			this.getData();
 		}
 	}
 </script>
