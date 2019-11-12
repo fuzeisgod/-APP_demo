@@ -11,17 +11,21 @@
 			<swiper-item v-for="(item, index) in newsList" :key="index">
 				<scroll-view scroll-y="true" :style="'height:' + scrollH + 'px;'" @scrolltolower="loadmore(index)">
 
-					<!-- 列表 -->
-					<block v-for="(item2,index2) in item.list" :key="index2">
-						<common-list :item="item2" :index="index2" @follow="follow" @doSupport="doSupport"></common-list>
-						<!-- 全局分割线 -->
-						<divider></divider>
-					</block>
-
-					<!-- 上拉加载 -->
-					<view class="flex align-center justify-center py-3">
-						<text class="font text-light-muted">{{item.loadmore}}</text>
-					</view>
+					<template v-if="item.list.length > 0">
+						<!-- 列表 -->
+						<block v-for="(item2,index2) in item.list" :key="index2">
+							<common-list :item="item2" :index="index2" @follow="follow" @doSupport="doSupport"></common-list>
+							<!-- 全局分割线 -->
+							<divider></divider>
+						</block>
+						<!-- 上拉加载 -->
+						<load-more :loadmore="item.loadmore"></load-more>
+					</template>
+					<template v-else>
+						<!-- 无数据 -->
+						<no-thing></no-thing>
+					</template>
+					
 
 				</scroll-view>
 			</swiper-item>
@@ -32,8 +36,43 @@
 </template>
 
 <script>
+	const demo = [{
+		username: "昵称1",
+		userpic: "../../static/default.jpg",
+		newstime: "2019-10-20 下午04:30",
+		isFollow: false,
+		title: "我是标题",
+		titlepic: "../../static/bgimg/1.jpg",
+		support: {
+			// 顶操作 type 为 "support",
+			// 踩操作 type 为 "unsupport",
+			// 未操作 type 为 ""
+			type: "",
+			support_count: 0,
+			unsupport_count: 0
+		},
+		comment_count: 2,
+		share_num: 2
+	}, {
+		username: "昵称2",
+		userpic: "../../static/default.jpg",
+		newstime: "2019-10-20 下午04:30",
+		isFollow: false,
+		title: "我是标题",
+		titlepic: "",
+		support: {
+			type: "",
+			support_count: 1,
+			unsupport_count: 2
+		},
+		comment_count: 2,
+		share_num: 2
+	}];
+
+
 	// '@/' 或 无'/'，直接从文件夹名字开始 -- 代表从根目录开始 
 	import commonList from '@/components/common/common-list.vue';
+	import loadMore from '@/components/common/load-more.vue';
 	export default {
 		data() {
 			return {
@@ -62,6 +101,12 @@
 				}],
 				newsList: []
 			}
+		},
+		// 监听点击导航栏搜索框
+		onNavigationBarSearchInputClicked() {
+			uni.navigateTo({
+				url: '../search/search'
+			});
 		},
 		methods: {
 			// 关注
@@ -118,61 +163,37 @@
 					// 生成列表模板
 					let obj = {
 						// 1.上拉加载更多 2.加载中... 3.没有更多了
-						loadmore:"上拉加载更多",
-						list: [{
-							username: "昵称1",
-							userpic: "../../static/default.jpg",
-							newstime: "2019-10-20 下午04:30",
-							isFollow: false,
-							title: "我是标题",
-							titlepic: "../../static/bgimg/1.jpg",
-							support: {
-								// 顶操作 type 为 "support",
-								// 踩操作 type 为 "unsupport",
-								// 未操作 type 为 ""
-								type: "",
-								support_count: 0,
-								unsupport_count: 0
-							},
-							comment_count: 2,
-							share_num: 2
-						}, {
-							username: "昵称2",
-							userpic: "../../static/default.jpg",
-							newstime: "2019-10-20 下午04:30",
-							isFollow: false,
-							title: "我是标题",
-							titlepic: "",
-							support: {
-								type: "",
-								support_count: 1,
-								unsupport_count: 2
-							},
-							comment_count: 2,
-							share_num: 2
-						}]
+						loadmore: "上拉加载更多",
+						list: []
+					}
+					if (i < 2) {
+						obj.list = demo
 					}
 					arr.push(obj)
 				}
 				this.newsList = arr
 			},
 			// 上拉加载更多
-			loadmore(index){
+			loadmore(index) {
 				// 拿到当前列表
 				let item = this.newsList[index]
+				// 判断是否处于可加载状态（上拉加载更多）
+				if (item.loadmore !== '上拉加载更多') return;
 				// 修改当前列表加载状态
 				item.loadmore = '加载中...'
+				console.log('上拉加载')
 				// 模拟数据请求
 				setTimeout(() => {
 					// 加载数据
-					item.list = [...item.list,...item.list]
+					item.list = [...item.list, ...item.list]
 					// 恢复加载状态
 					item.loadmore = '上拉加载更多'
-				}, 2000);
+				}, 5000);
 			}
 		},
 		components: {
-			commonList
+			commonList,
+			loadMore
 		},
 		onLoad() {
 			let res = uni.getSystemInfo({

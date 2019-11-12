@@ -4,7 +4,8 @@
     "pages/news/news",
     "pages/msg/msg",
     "pages/my/my",
-    "pages/demo/demo"
+    "pages/demo/demo",
+    "pages/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -53,6 +54,7 @@
   "appname": "社区交友",
   "compilerVersion": "2.3.7",
   "usingComponents": {
-    "divider": "/components/common/divider"
+    "divider": "/components/common/divider",
+    "no-thing": "/components/common/no-thing"
   }
 }
