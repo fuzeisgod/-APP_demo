@@ -16,5 +16,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "common-list": "/components/common/common-list"
+  }
 }

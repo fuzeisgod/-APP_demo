@@ -14,16 +14,14 @@
 							"placeholder": "搜索帖子",
 							"placeholderColor": "#6D6C67"
 						},
-						"buttons":[
-							{
-								"color":"#333333",
-								"colorPressed":"#FD597C",
-								"float":"right",
-								"fontSize":"20px",
-								"fontSrc":"static/iconfont.ttf",
-								"text":"\ue668"
-							}
-						]
+						"buttons": [{
+							"color": "#333333",
+							"colorPressed": "#FD597C",
+							"float": "right",
+							"fontSize": "20px",
+							"fontSrc": "static/iconfont.ttf",
+							"text": "\ue668"
+						}]
 					}
 				}
 			}
@@ -41,10 +39,9 @@
 			"style": {
 				"navigationBarTitleText": "view和text组件"
 			}
-		}
-	    ,{
-            "path" : "pages/search/search",
-            "style" : {
+		}, {
+			"path": "pages/search/search",
+			"style": {
 				"app-plus": {
 					// 导航栏配置
 					"titleNView": {
@@ -55,20 +52,18 @@
 							"placeholder": "搜索帖子",
 							"placeholderColor": "#6D6C67"
 						},
-						"buttons":[
-							{
-								"color":"#333333",
-								"colorPressed":"#FD597C",
-								"float":"right",
-								"fontSize":"14px",
-								"text":"搜索"
-							}
-						]
+						"buttons": [{
+							"color": "#333333",
+							"colorPressed": "#FD597C",
+							"float": "right",
+							"fontSize": "14px",
+							"text": "搜索"
+						}]
 					}
 				}
 			}
-        }
-    ],
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "社区交友",

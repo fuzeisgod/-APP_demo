@@ -1234,15 +1234,27 @@ function gz$gwx_10(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[2,'==='],[[6],[[7],[3,'searchList']],[3,'length']],[1,0]])
 Z([3,'py-2 font-md px-2'])
 Z([3,'搜索历史'])
 Z([3,'flex flex-wrap'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'list']])
-Z(z[3])
+Z(z[4])
+Z([3,'__e'])
 Z([3,'border rounded font mx-2 my-1 px-2'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[[5],[1,'clickSearchHistory']],[[4],[[5],[1,'$0']]]],[[4],[[5],[[4],[[5],[[4],[[5],[[5],[[5],[1,'list']],[1,'']],[[7],[3,'index']]]]]]]]]]]]]]]])
+Z([3,'bg-light'])
 Z([a,[[7],[3,'item']]])
+Z(z[4])
+Z(z[5])
+Z([[7],[3,'searchList']])
+Z(z[4])
+Z([3,'__l'])
+Z([[7],[3,'index']])
+Z([[7],[3,'item']])
+Z([[2,'+'],[1,'1-'],[[7],[3,'index']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
@@ -1483,26 +1495,42 @@ d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
 var cUC=_n('view')
-var oVC=_n('view')
-_rz(z,oVC,'class',0,e,s,gg)
-var lWC=_oz(z,1,e,s,gg)
-_(oVC,lWC)
+var oVC=_v()
 _(cUC,oVC)
-var aXC=_n('view')
-_rz(z,aXC,'class',2,e,s,gg)
-var tYC=_v()
-_(aXC,tYC)
-var eZC=function(o2C,b1C,x3C,gg){
-var f5C=_n('view')
-_rz(z,f5C,'class',7,o2C,b1C,gg)
-var c6C=_oz(z,8,o2C,b1C,gg)
-_(f5C,c6C)
-_(x3C,f5C)
-return x3C
+if(_oz(z,0,e,s,gg)){oVC.wxVkey=1
+var lWC=_n('view')
+_rz(z,lWC,'class',1,e,s,gg)
+var aXC=_oz(z,2,e,s,gg)
+_(lWC,aXC)
+_(oVC,lWC)
+var tYC=_n('view')
+_rz(z,tYC,'class',3,e,s,gg)
+var eZC=_v()
+_(tYC,eZC)
+var b1C=function(x3C,o2C,o4C,gg){
+var c6C=_mz(z,'view',['bindtap',8,'class',1,'data-event-opts',2,'hoverClass',3],[],x3C,o2C,gg)
+var h7C=_oz(z,12,x3C,o2C,gg)
+_(c6C,h7C)
+_(o4C,c6C)
+return o4C
 }
-tYC.wxXCkey=2
-_2z(z,5,eZC,e,s,gg,tYC,'item','index','index')
-_(cUC,aXC)
+eZC.wxXCkey=2
+_2z(z,6,b1C,e,s,gg,eZC,'item','index','index')
+_(oVC,tYC)
+}
+else{oVC.wxVkey=2
+var o8C=_v()
+_(oVC,o8C)
+var c9C=function(lAD,o0C,aBD,gg){
+var eDD=_mz(z,'common-list',['bind:__l',17,'index',1,'item',2,'vueId',3],[],lAD,o0C,gg)
+_(aBD,eDD)
+return aBD
+}
+o8C.wxXCkey=4
+_2z(z,15,c9C,e,s,gg,o8C,'item','index','index')
+}
+oVC.wxXCkey=1
+oVC.wxXCkey=3
 _(r,cUC)
 return r
 }

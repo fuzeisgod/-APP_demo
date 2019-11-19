@@ -52,7 +52,7 @@
     "autoclose": false
   },
   "appname": "社区交友",
-  "compilerVersion": "2.3.7",
+  "compilerVersion": "2.4.2",
   "usingComponents": {
     "divider": "/components/common/divider",
     "no-thing": "/components/common/no-thing"
