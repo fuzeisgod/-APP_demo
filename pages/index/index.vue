@@ -25,7 +25,7 @@
 						<!-- 无数据 -->
 						<no-thing></no-thing>
 					</template>
-					
+
 
 				</scroll-view>
 			</swiper-item>
@@ -106,6 +106,12 @@
 		onNavigationBarSearchInputClicked() {
 			uni.navigateTo({
 				url: '../search/search'
+			});
+		},
+		// 监听导航按钮点击事件
+		onNavigationBarButtonTap() {
+			uni.navigateTo({
+				url: '../add-input/add-input'
 			});
 		},
 		methods: {

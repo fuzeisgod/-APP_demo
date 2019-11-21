@@ -5,7 +5,8 @@
     "pages/msg/msg",
     "pages/my/my",
     "pages/demo/demo",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/add-input/add-input"
   ],
   "window": {
     "navigationBarTextStyle": "black",
