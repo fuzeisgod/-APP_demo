@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- 自定义导航 -->
-		<uni-nav-bar left-icon="back" :statusBar="true" :border="false">
+		<uni-nav-bar left-icon="back" :statusBar="true" :border="false" @click-left="back">
 			<view class="flex align-center justify-center w-100">
 				所有人可见
 				<text class="iconfont icon-shezhi"></text>
@@ -11,7 +11,7 @@
 		<textarea v-model="content" placeholder="说一句话吧~" class="uni-textarea p-2" />
 
 		<!-- 多图上传 -->
-		<upload-image @choose="choose"></upload-image>
+		<upload-image @change="changImage"></upload-image>
 
 		<!-- 底部操作条 -->
 		<view class="fixed-bottom bg-white flex align-center" style="height: 85rpx;">
@@ -35,13 +35,44 @@ export default {
 	data() {
 		return {
 			content: '',
-			imageList: []
+			imageList: [],
+			// 是否已经弹出提示框
+			showBack: false
 		};
 	},
 	methods: {
 		// 选中图片
-		choose(e) {
+		changImage(e) {
 			this.imageList = e;
+		},
+		back() {
+			uni.navigateBack({
+				delta: 1
+			})
+		}
+	},
+	// 监听返回
+	onBackPress(){
+		console.log('test')
+		if((this.content !== '' || this.imageList.length > 0) && !this.showBack) {
+			uni.showModal({
+				content: '是否要保存为草稿?',
+				showCancel: true,
+				cancelText: '不保存',
+				confirmText: '保存',
+				success: res => {
+					if(res.confirm){
+						console.log('保存')
+					}
+					// 手动执行返回
+					uni.navigateBack({
+						delta: 1
+					})
+				}
+			});
+			this.showBack = true
+			// 阻止返回的默认行为
+			return true
 		}
 	}
 };
