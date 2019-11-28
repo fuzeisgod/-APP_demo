@@ -27,7 +27,11 @@
 			}
 		}, {
 			"path": "pages/news/news",
-			"style": {}
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
 		}, {
 			"path": "pages/msg/msg",
 			"style": {}
@@ -65,7 +69,9 @@
 		}, {
 			"path": "pages/add-input/add-input",
 			"style": {
-				"titleNView": false
+				"app-plus": {
+					"titleNView": false
+				}
 			}
 		}
 	],

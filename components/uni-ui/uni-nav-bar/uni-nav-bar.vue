@@ -2,6 +2,7 @@
 
 	<view class="uni-navbar">
 		<view :class="{'uni-navbar--fixed': fixed,'uni-navbar--shadow':border,'uni-navbar--border':border}" :style="{'background-color':backgroundColor}" class="uni-navbar__content">
+			<!-- 顶部状态栏 -->
 			<uni-status-bar v-if="statusBar" />
 			<view :style="{color:color}" class="uni-navbar__header uni-navbar__content_view">
 				<view class="uni-navbar__header-btns uni-navbar__content_view" @tap="onClickLeft">
