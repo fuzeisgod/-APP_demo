@@ -60,9 +60,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 /***/ }),
 
 /***/ 4:
-/*!***************************************!*\
-  !*** D:/nui-app/-APP_demo/pages.json ***!
-  \***************************************/
+/*!********************************************************************!*\
+  !*** C:/Users/MSI/Documents/HBuilderProjects/-APP_demo/pages.json ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -95,9 +95,9 @@ eval("module.exports = {\"_from\":\"@dcloudio/uni-stat@next\",\"_id\":\"@dcloudi
 /***/ }),
 
 /***/ 7:
-/*!********************************************************!*\
-  !*** D:/nui-app/-APP_demo/pages.json?{"type":"style"} ***!
-  \********************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/MSI/Documents/HBuilderProjects/-APP_demo/pages.json?{"type":"style"} ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -107,9 +107,9 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ }),
 
 /***/ 8:
-/*!*******************************************************!*\
-  !*** D:/nui-app/-APP_demo/pages.json?{"type":"stat"} ***!
-  \*******************************************************/
+/*!************************************************************************************!*\
+  !*** C:/Users/MSI/Documents/HBuilderProjects/-APP_demo/pages.json?{"type":"stat"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -152,9 +152,9 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /***/ }),
 
 /***/ 99:
-/*!*************************************************!*\
-  !*** D:/nui-app/-APP_demo/common/permission.js ***!
-  \*************************************************/
+/*!******************************************************************************!*\
+  !*** C:/Users/MSI/Documents/HBuilderProjects/-APP_demo/common/permission.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

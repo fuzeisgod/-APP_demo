@@ -1394,15 +1394,29 @@ Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'changeTab']],
 Z([a,[[6],[[7],[3,'item']],[3,'name']]])
 Z([3,'iconfont icon-fatie_icon'])
 Z([3,'right'])
+Z(z[1])
+Z([[7],[3,'tabIndex']])
+Z([[4],[[5],[[4],[[5],[[5],[1,'change']],[[4],[[5],[[4],[[5],[[5],[1,'onChangeTab']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([1,150])
 Z([[2,'+'],[[2,'+'],[1,'height:'],[[7],[3,'scrollH']]],[1,'px;']])
 Z([3,'true'])
-Z(z[18])
-Z([3,'__i0__'])
-Z([3,'i'])
-Z([1,5])
-Z([3,'*this'])
-Z([a,[[7],[3,'i']]])
+Z(z[21])
+Z(z[7])
+Z(z[8])
+Z([[7],[3,'list']])
+Z(z[7])
+Z(z[0])
+Z(z[1])
+Z(z[1])
+Z([[4],[[5],[[5],[[4],[[5],[[5],[1,'^follow']],[[4],[[5],[[4],[[5],[1,'follow']]]]]]]],[[4],[[5],[[5],[1,'^doSupport']],[[4],[[5],[[4],[[5],[1,'doSupport']]]]]]]]])
+Z([[7],[3,'index']])
+Z([[7],[3,'item']])
+Z([[2,'+'],[1,'2-'],[[7],[3,'index']]])
+Z(z[0])
+Z([[2,'+'],[1,'3-'],[[7],[3,'index']]])
+Z(z[22])
+Z(z[21])
+Z([3,'话题'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
@@ -1896,22 +1910,30 @@ _(lUE,aVE)
 var h5E=_mz(z,'text',['class',15,'slot',1],[],e,s,gg)
 _(lUE,h5E)
 _(oTE,lUE)
-var o6E=_mz(z,'swiper',['duration',17,'style',1],[],e,s,gg)
+var o6E=_mz(z,'swiper',['bindchange',17,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
 var c7E=_n('swiper-item')
-var o8E=_mz(z,'scroll-view',['scrollY',19,'style',1],[],e,s,gg)
+var o8E=_mz(z,'scroll-view',['scrollY',22,'style',1],[],e,s,gg)
 var l9E=_v()
 _(o8E,l9E)
 var a0E=function(eBF,tAF,bCF,gg){
-var xEF=_n('view')
-var oFF=_oz(z,25,eBF,tAF,gg)
-_(xEF,oFF)
+var xEF=_mz(z,'common-list',['bind:__l',28,'bind:doSupport',1,'bind:follow',2,'data-event-opts',3,'index',4,'item',5,'vueId',6],[],eBF,tAF,gg)
 _(bCF,xEF)
+var oFF=_mz(z,'divider',['bind:__l',35,'vueId',1],[],eBF,tAF,gg)
+_(bCF,oFF)
 return bCF
 }
-l9E.wxXCkey=2
-_2z(z,23,a0E,e,s,gg,l9E,'i','__i0__','*this')
+l9E.wxXCkey=4
+_2z(z,26,a0E,e,s,gg,l9E,'item','index','index')
 _(c7E,o8E)
 _(o6E,c7E)
+var fGF=_n('swiper-item')
+var cHF=_mz(z,'scroll-view',['scrollY',37,'style',1],[],e,s,gg)
+var hIF=_n('view')
+var oJF=_oz(z,39,e,s,gg)
+_(hIF,oJF)
+_(cHF,hIF)
+_(fGF,cHF)
+_(o6E,fGF)
 _(oTE,o6E)
 _(r,oTE)
 return r
@@ -1920,44 +1942,44 @@ e_[x[13]]={f:m13,j:[],i:[],ti:[],ic:[]}
 d_[x[14]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var cHF=_n('view')
-var hIF=_v()
-_(cHF,hIF)
-if(_oz(z,0,e,s,gg)){hIF.wxVkey=1
-var oJF=_n('view')
-_rz(z,oJF,'class',1,e,s,gg)
-var cKF=_oz(z,2,e,s,gg)
-_(oJF,cKF)
-_(hIF,oJF)
 var oLF=_n('view')
-_rz(z,oLF,'class',3,e,s,gg)
 var lMF=_v()
 _(oLF,lMF)
-var aNF=function(ePF,tOF,bQF,gg){
-var xSF=_mz(z,'view',['bindtap',8,'class',1,'data-event-opts',2,'hoverClass',3],[],ePF,tOF,gg)
-var oTF=_oz(z,12,ePF,tOF,gg)
-_(xSF,oTF)
-_(bQF,xSF)
-return bQF
+if(_oz(z,0,e,s,gg)){lMF.wxVkey=1
+var aNF=_n('view')
+_rz(z,aNF,'class',1,e,s,gg)
+var tOF=_oz(z,2,e,s,gg)
+_(aNF,tOF)
+_(lMF,aNF)
+var ePF=_n('view')
+_rz(z,ePF,'class',3,e,s,gg)
+var bQF=_v()
+_(ePF,bQF)
+var oRF=function(oTF,xSF,fUF,gg){
+var hWF=_mz(z,'view',['bindtap',8,'class',1,'data-event-opts',2,'hoverClass',3],[],oTF,xSF,gg)
+var oXF=_oz(z,12,oTF,xSF,gg)
+_(hWF,oXF)
+_(fUF,hWF)
+return fUF
 }
-lMF.wxXCkey=2
-_2z(z,6,aNF,e,s,gg,lMF,'item','index','index')
-_(hIF,oLF)
+bQF.wxXCkey=2
+_2z(z,6,oRF,e,s,gg,bQF,'item','index','index')
+_(lMF,ePF)
 }
-else{hIF.wxVkey=2
-var fUF=_v()
-_(hIF,fUF)
-var cVF=function(oXF,hWF,cYF,gg){
-var l1F=_mz(z,'common-list',['bind:__l',17,'index',1,'item',2,'vueId',3],[],oXF,hWF,gg)
-_(cYF,l1F)
-return cYF
+else{lMF.wxVkey=2
+var cYF=_v()
+_(lMF,cYF)
+var oZF=function(a2F,l1F,t3F,gg){
+var b5F=_mz(z,'common-list',['bind:__l',17,'index',1,'item',2,'vueId',3],[],a2F,l1F,gg)
+_(t3F,b5F)
+return t3F
 }
-fUF.wxXCkey=4
-_2z(z,15,cVF,e,s,gg,fUF,'item','index','index')
+cYF.wxXCkey=4
+_2z(z,15,oZF,e,s,gg,cYF,'item','index','index')
 }
-hIF.wxXCkey=1
-hIF.wxXCkey=3
-_(r,cHF)
+lMF.wxXCkey=1
+lMF.wxXCkey=3
+_(r,oLF)
 return r
 }
 e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
@@ -2124,7 +2146,7 @@ __wxAppCode__['pages/msg/msg.wxml']=$gwx('./pages/msg/msg.wxml');
 __wxAppCode__['pages/my/my.wxss']=undefined;    
 __wxAppCode__['pages/my/my.wxml']=$gwx('./pages/my/my.wxml');
 
-__wxAppCode__['pages/news/news.wxss']=setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"uni-navbar__content { display: block; position: relative; width: 100%; background-color: #fff; overflow: hidden }\n.",[1],"uni-navbar__content .",[1],"uni-navbar__content_view { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center }\n.",[1],"uni-navbar__header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 44px; line-height: 44px; font-size: 16px }\n.",[1],"uni-navbar__header-btns { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; width: ",[0,120],"; padding: 0 ",[0,12]," }\n.",[1],"uni-navbar__header-btns:first-child { padding-left: 0 }\n.",[1],"uni-navbar__header-btns:last-child { width: ",[0,60]," }\n.",[1],"uni-navbar__header-btns-right:last-child { width: ",[0,120],"; text-align: right; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse }\n.",[1],"uni-navbar__header-container { width: 100%; margin: 0 ",[0,10]," }\n.",[1],"uni-navbar__header-container-inner { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-size: ",[0,30]," }\n.",[1],"uni-navbar__placeholder-view { height: 44px }\n.",[1],"uni-navbar--fixed { position: fixed; z-index: 998 }\n.",[1],"uni-navbar--shadow { -webkit-box-shadow: 0 1px 6px #ccc; box-shadow: 0 1px 6px #ccc }\n.",[1],"uni-navbar--border:after { position: absolute; z-index: 3; bottom: 0; left: 0; right: 0; height: 1px; content: \x27\x27; -webkit-transform: scaleY(.5); -ms-transform: scaleY(.5); transform: scaleY(.5); background-color: #e5e5e5 }\n",],undefined,{path:"./pages/news/news.wxss"});    
+__wxAppCode__['pages/news/news.wxss']=setCssToHead([".",[1],"support-active { color: #FF4A6A; }\n",],undefined,{path:"./pages/news/news.wxss"});    
 __wxAppCode__['pages/news/news.wxml']=$gwx('./pages/news/news.wxml');
 
 __wxAppCode__['pages/search/search.wxss']=undefined;    

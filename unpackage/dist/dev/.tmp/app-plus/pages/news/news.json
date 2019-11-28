@@ -1,6 +1,8 @@
 {
   "titleNView": false,
   "usingComponents": {
-    "uni-nav-bar": "/components/uni-ui/uni-nav-bar/uni-nav-bar"
+    "divider": "/components/common/divider",
+    "uni-nav-bar": "/components/uni-ui/uni-nav-bar/uni-nav-bar",
+    "common-list": "/components/common/common-list"
   }
 }
