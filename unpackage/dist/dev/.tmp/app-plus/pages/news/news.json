@@ -3,6 +3,8 @@
   "usingComponents": {
     "divider": "/components/common/divider",
     "uni-nav-bar": "/components/uni-ui/uni-nav-bar/uni-nav-bar",
-    "common-list": "/components/common/common-list"
+    "common-list": "/components/common/common-list",
+    "load-more": "/components/common/load-more",
+    "hot-cate": "/components/news/hot-cate"
   }
 }

@@ -1,2 +1,1 @@
-setCssToHead([".",[1],"support-active { color: #FF4A6A; }\n",],undefined,{path:"./pages/news/news.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/news/news.wxml') } }));
