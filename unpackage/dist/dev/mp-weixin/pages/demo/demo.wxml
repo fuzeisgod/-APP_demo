@@ -1,0 +1,1 @@
+<view><view class="font">{{name}}</view><button type="primary" data-event-opts="{{[['tap',[['change',['$event']]]]]}}" bindtap="__e">button</button></view>

@@ -1,0 +1,14 @@
+{
+  "titleNView": {
+    "type": "transparent",
+    "buttons": [
+      {
+        "type": "menu"
+      }
+    ]
+  },
+  "usingComponents": {
+    "divider": "/components/common/divider",
+    "topic-info": "/components/topic-detail/topic-info"
+  }
+}

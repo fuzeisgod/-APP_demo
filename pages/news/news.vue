@@ -50,17 +50,9 @@
 					<!-- 最近更新 -->
 					<view class="p-2 font-md">最近更新</view>
 					<!-- 话题列表组件 -->
-					<view class="flex align-center p-2">
-						<image src="/static/bgimg/3.jpg" style="height: 150rpx;width: 150rpx;" class="rounded mr-2"></image>
-						<view class="flex flex-column flex-1">
-							<text class="font-md text-dark">#话题名称#</text>
-							<text class="font text-secondary">话题描述</text>
-							<view class="flex align-center font text-secondary">
-								<text class="mr-2">动态：10</text>
-								<text>今日：10</text>
-							</view>
-						</view>
-					</view>
+					<block v-for="(item, index) in topicList" :key="index">
+						<topic-list :item="item"></topic-list>
+					</block>
 				</scroll-view>
 			</swiper-item>
 		</swiper>
@@ -118,6 +110,7 @@
 	import commonList from '@/components/common/common-list.vue';
 	import loadMore from '@/components/common/load-more.vue';
 	import hotCate from '@/components/news/hot-cate.vue';
+	import topicList from '@/components/news/topic-list.vue';
 	export default {
 		data() {
 			return {
@@ -136,6 +129,25 @@
 					name: "关注"
 				}, {
 					name: "推荐"
+				}],
+				topicList: [{
+					cover: "/static/bgimg/3.jpg",
+					title: "话题名称",
+					desc: "话题描述",
+					today_count: 0,
+					news_count: 10
+				}, {
+					cover: "/static/bgimg/3.jpg",
+					title: "话题名称",
+					desc: "话题描述",
+					today_count: 0,
+					news_count: 10
+				}, {
+					cover: "/static/bgimg/3.jpg",
+					title: "话题名称",
+					desc: "话题描述",
+					today_count: 0,
+					news_count: 10
 				}]
 			}
 		},
@@ -202,7 +214,8 @@
 			uniNavBar,
 			commonList,
 			loadMore,
-			hotCate
+			hotCate,
+			topicList
 		},
 		onLoad() {
 			let res = uni.getSystemInfo({

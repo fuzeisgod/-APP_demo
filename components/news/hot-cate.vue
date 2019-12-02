@@ -18,7 +18,9 @@
 		props: ['hotCate'],
 		methods: {
 			openMore() {
-				console.log('更多')
+				uni.navigateTo({
+					url: '../../pages/topic-nav/topic-nav'
+				});
 			},
 			openDetail(item) {
 				console.log('打开话题分类页')
