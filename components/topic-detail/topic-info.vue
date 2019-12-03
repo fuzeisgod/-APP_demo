@@ -5,7 +5,7 @@
 		</view>
 		
 		<!-- z-index 需要定义在定位元素上才奏效 -->
-		<view class="position-relative bg-white px-2" style="z-index: 10;">
+		<view class="position-relative bg-white px-2 pb-2" style="z-index: 10;">
 			<view class="flex">
 				<image :src="info.cover" style="height: 150rpx;width: 150rpx;margin-top: -75rpx;" class="rounded mr-2"
 				 mode=""></image>

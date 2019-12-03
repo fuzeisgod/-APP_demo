@@ -1238,7 +1238,7 @@ Z([3,'w-100 filter'])
 Z([3,'aspectFill'])
 Z([[6],[[7],[3,'info']],[3,'cover']])
 Z([3,'height:300rpx;'])
-Z([3,'position-relative bg-white px-2'])
+Z([3,'position-relative bg-white px-2 pb-2'])
 Z([3,'z-index:10;'])
 Z([3,'flex'])
 Z([3,'rounded mr-2'])
@@ -1565,6 +1565,42 @@ Z([[7],[3,'info']])
 Z([3,'1'])
 Z(z[0])
 Z([3,'2'])
+Z([3,'index'])
+Z([3,'item'])
+Z([[7],[3,'hotList']])
+Z(z[5])
+Z([3,'p-2 flex align-center border-bottom'])
+Z([3,'bg-light'])
+Z([3,'iconfont icon-xihuan text-main'])
+Z([3,'font text-dark text-ellipsis'])
+Z([a,[[6],[[7],[3,'item']],[3,'title']]])
+Z(z[0])
+Z([3,'3'])
+Z([3,'flex align-center py-2'])
+Z(z[5])
+Z(z[6])
+Z([[7],[3,'tabBars']])
+Z(z[5])
+Z([3,'__e'])
+Z([[4],[[5],[[5],[1,'flex-1 flex align-center justify-center']],[[2,'?:'],[[2,'==='],[[7],[3,'index']],[[7],[3,'tabIndex']]],[1,'font-lg font-weight-bold text-main'],[1,'']]]])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'changeTab']],[[4],[[5],[[7],[3,'index']]]]]]]]]]]])
+Z([a,[[6],[[7],[3,'item']],[3,'name']]])
+Z([[2,'>'],[[6],[[7],[3,'listData']],[3,'length']],[1,0]])
+Z(z[5])
+Z(z[6])
+Z([[7],[3,'listData']])
+Z(z[5])
+Z(z[0])
+Z([[7],[3,'index']])
+Z([[7],[3,'item']])
+Z([[2,'+'],[1,'4-'],[[7],[3,'index']]])
+Z(z[0])
+Z([[2,'+'],[1,'5-'],[[7],[3,'index']]])
+Z(z[0])
+Z([3,'6'])
+Z(z[0])
+Z([[7],[3,'loadtext']])
+Z([3,'7'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
 function gz$gwx_20(){
@@ -2310,10 +2346,67 @@ d_[x[18]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
 var e2H=_n('view')
-var b3H=_mz(z,'topic-info',['bind:__l',0,'info',1,'vueId',1],[],e,s,gg)
-_(e2H,b3H)
-var o4H=_mz(z,'divider',['bind:__l',3,'vueId',1],[],e,s,gg)
+var o4H=_mz(z,'topic-info',['bind:__l',0,'info',1,'vueId',1],[],e,s,gg)
 _(e2H,o4H)
+var x5H=_mz(z,'divider',['bind:__l',3,'vueId',1],[],e,s,gg)
+_(e2H,x5H)
+var o6H=_v()
+_(e2H,o6H)
+var f7H=function(h9H,c8H,o0H,gg){
+var oBI=_mz(z,'view',['class',9,'hoverClass',1],[],h9H,c8H,gg)
+var lCI=_n('text')
+_rz(z,lCI,'class',11,h9H,c8H,gg)
+_(oBI,lCI)
+var aDI=_n('text')
+_rz(z,aDI,'class',12,h9H,c8H,gg)
+var tEI=_oz(z,13,h9H,c8H,gg)
+_(aDI,tEI)
+_(oBI,aDI)
+_(o0H,oBI)
+return o0H
+}
+o6H.wxXCkey=2
+_2z(z,7,f7H,e,s,gg,o6H,'item','index','index')
+var eFI=_mz(z,'divider',['bind:__l',14,'vueId',1],[],e,s,gg)
+_(e2H,eFI)
+var bGI=_n('view')
+_rz(z,bGI,'class',16,e,s,gg)
+var oHI=_v()
+_(bGI,oHI)
+var xII=function(fKI,oJI,cLI,gg){
+var oNI=_mz(z,'view',['bindtap',21,'class',1,'data-event-opts',2],[],fKI,oJI,gg)
+var cOI=_oz(z,24,fKI,oJI,gg)
+_(oNI,cOI)
+_(cLI,oNI)
+return cLI
+}
+oHI.wxXCkey=2
+_2z(z,19,xII,e,s,gg,oHI,'item','index','index')
+_(e2H,bGI)
+var b3H=_v()
+_(e2H,b3H)
+if(_oz(z,25,e,s,gg)){b3H.wxVkey=1
+var oPI=_v()
+_(b3H,oPI)
+var lQI=function(tSI,aRI,eTI,gg){
+var oVI=_mz(z,'common-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],tSI,aRI,gg)
+_(eTI,oVI)
+var xWI=_mz(z,'divider',['bind:__l',34,'vueId',1],[],tSI,aRI,gg)
+_(eTI,xWI)
+return eTI
+}
+oPI.wxXCkey=4
+_2z(z,28,lQI,e,s,gg,oPI,'item','index','index')
+}
+else{b3H.wxVkey=2
+var oXI=_mz(z,'no-thing',['bind:__l',36,'vueId',1],[],e,s,gg)
+_(b3H,oXI)
+}
+var fYI=_mz(z,'load-more',['bind:__l',38,'loadmore',1,'vueId',2],[],e,s,gg)
+_(e2H,fYI)
+b3H.wxXCkey=1
+b3H.wxXCkey=3
+b3H.wxXCkey=3
 _(r,e2H)
 return r
 }
@@ -2321,58 +2414,58 @@ e_[x[18]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[19]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var o6H=_n('view')
-var f7H=_mz(z,'scroll-view',['scrollWithAnimation',-1,'scrollX',-1,'class',0,'scrollIntoView',1,'style',1],[],e,s,gg)
-var c8H=_v()
-_(f7H,c8H)
-var h9H=function(cAI,o0H,oBI,gg){
-var aDI=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'id',3],[],cAI,o0H,gg)
-var tEI=_oz(z,11,cAI,o0H,gg)
-_(aDI,tEI)
-_(oBI,aDI)
-return oBI
+var h1I=_n('view')
+var o2I=_mz(z,'scroll-view',['scrollWithAnimation',-1,'scrollX',-1,'class',0,'scrollIntoView',1,'style',1],[],e,s,gg)
+var c3I=_v()
+_(o2I,c3I)
+var o4I=function(a6I,l5I,t7I,gg){
+var b9I=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'id',3],[],a6I,l5I,gg)
+var o0I=_oz(z,11,a6I,l5I,gg)
+_(b9I,o0I)
+_(t7I,b9I)
+return t7I
 }
-c8H.wxXCkey=2
-_2z(z,5,h9H,e,s,gg,c8H,'item','index','index')
-_(o6H,f7H)
-var eFI=_mz(z,'swiper',['bindchange',12,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
-var bGI=_v()
-_(eFI,bGI)
-var oHI=function(oJI,xII,fKI,gg){
-var hMI=_n('swiper-item')
-var oNI=_mz(z,'scroll-view',['bindscrolltolower',21,'data-event-opts',1,'scrollY',2,'style',3],[],oJI,xII,gg)
-var cOI=_v()
-_(oNI,cOI)
-if(_oz(z,25,oJI,xII,gg)){cOI.wxVkey=1
-var oPI=_v()
-_(cOI,oPI)
-var lQI=function(tSI,aRI,eTI,gg){
-var oVI=_mz(z,'topic-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],tSI,aRI,gg)
-_(eTI,oVI)
-var xWI=_mz(z,'divider',['bind:__l',34,'vueId',1],[],tSI,aRI,gg)
-_(eTI,xWI)
-return eTI
+c3I.wxXCkey=2
+_2z(z,5,o4I,e,s,gg,c3I,'item','index','index')
+_(h1I,o2I)
+var xAJ=_mz(z,'swiper',['bindchange',12,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
+var oBJ=_v()
+_(xAJ,oBJ)
+var fCJ=function(hEJ,cDJ,oFJ,gg){
+var oHJ=_n('swiper-item')
+var lIJ=_mz(z,'scroll-view',['bindscrolltolower',21,'data-event-opts',1,'scrollY',2,'style',3],[],hEJ,cDJ,gg)
+var aJJ=_v()
+_(lIJ,aJJ)
+if(_oz(z,25,hEJ,cDJ,gg)){aJJ.wxVkey=1
+var tKJ=_v()
+_(aJJ,tKJ)
+var eLJ=function(oNJ,bMJ,xOJ,gg){
+var fQJ=_mz(z,'topic-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],oNJ,bMJ,gg)
+_(xOJ,fQJ)
+var cRJ=_mz(z,'divider',['bind:__l',34,'vueId',1],[],oNJ,bMJ,gg)
+_(xOJ,cRJ)
+return xOJ
 }
-oPI.wxXCkey=4
-_2z(z,28,lQI,oJI,xII,gg,oPI,'item2','index2','index2')
-var oXI=_mz(z,'load-more',['bind:__l',36,'loadmore',1,'vueId',2],[],oJI,xII,gg)
-_(cOI,oXI)
+tKJ.wxXCkey=4
+_2z(z,28,eLJ,hEJ,cDJ,gg,tKJ,'item2','index2','index2')
+var hSJ=_mz(z,'load-more',['bind:__l',36,'loadmore',1,'vueId',2],[],hEJ,cDJ,gg)
+_(aJJ,hSJ)
 }
-else{cOI.wxVkey=2
-var fYI=_mz(z,'no-thing',['bind:__l',39,'vueId',1],[],oJI,xII,gg)
-_(cOI,fYI)
+else{aJJ.wxVkey=2
+var oTJ=_mz(z,'no-thing',['bind:__l',39,'vueId',1],[],hEJ,cDJ,gg)
+_(aJJ,oTJ)
 }
-cOI.wxXCkey=1
-cOI.wxXCkey=3
-cOI.wxXCkey=3
-_(hMI,oNI)
-_(fKI,hMI)
-return fKI
+aJJ.wxXCkey=1
+aJJ.wxXCkey=3
+aJJ.wxXCkey=3
+_(oHJ,lIJ)
+_(oFJ,oHJ)
+return oFJ
 }
-bGI.wxXCkey=4
-_2z(z,19,oHI,e,s,gg,bGI,'item','index','index')
-_(o6H,eFI)
-_(r,o6H)
+oBJ.wxXCkey=4
+_2z(z,19,fCJ,e,s,gg,oBJ,'item','index','index')
+_(h1I,xAJ)
+_(r,h1I)
 return r
 }
 e_[x[19]]={f:m19,j:[],i:[],ti:[],ic:[]}
