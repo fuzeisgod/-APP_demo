@@ -134,14 +134,13 @@
 				// 拿到当前的列表
 				let index = this.tabIndex
 				// 判断是否处于可加载状态
-				if(this.loadtext !== '上拉加载更多') return;
-				// 设置上拉加载状态处于加载中
-				// this['loadtext' + (this.tabIndex + 1)] = '加载中...'
-				console.log('ok')
-				console.log(this['loadtext1'])
+				if (this.loadtext !== '上拉加载更多') return;
+				// 设置上拉加载状态处于加载中,获取对象上的属性可以通过 obj['属性名'] 来获取属性值
+				this['loadtext' + (index + 1)] = '加载中...'
 				// 请求数据
-				setTimeout(function() {
-					
+				setTimeout(() => {
+					this['list' + (index + 1)] = [...this['list' + (index + 1)], ...this['list' + (index + 1)]]
+					this['loadtext' + (index + 1)] = '上拉加载更多'
 				}, 2000);
 			}
 		}

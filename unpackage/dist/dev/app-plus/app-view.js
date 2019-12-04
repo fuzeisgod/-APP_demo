@@ -1434,7 +1434,19 @@ function gz$gwx_15(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'消息页'])
+Z([3,'flex align-center p-2 '])
+Z([3,'rounded-circle mr-2'])
+Z([3,'../../static/bgimg/4.jpg'])
+Z([3,'height:80rpx;width:80rpx;'])
+Z([3,'flex flex-column flex-1'])
+Z([3,'flex align-center justify-between'])
+Z([3,'font-md'])
+Z([3,'昵称'])
+Z([3,'font text-secondary'])
+Z([3,'12：33'])
+Z(z[5])
+Z([3,'text-secondary'])
+Z([3,'内容'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
 function gz$gwx_16(){
@@ -2190,7 +2202,34 @@ d_[x[14]]={}
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
 var oXF=_n('view')
-var cYF=_oz(z,0,e,s,gg)
+var cYF=_n('view')
+_rz(z,cYF,'class',0,e,s,gg)
+var oZF=_mz(z,'image',['mode',-1,'class',1,'src',1,'style',2],[],e,s,gg)
+_(cYF,oZF)
+var l1F=_n('view')
+_rz(z,l1F,'class',4,e,s,gg)
+var a2F=_n('view')
+_rz(z,a2F,'class',5,e,s,gg)
+var t3F=_n('text')
+_rz(z,t3F,'class',6,e,s,gg)
+var e4F=_oz(z,7,e,s,gg)
+_(t3F,e4F)
+_(a2F,t3F)
+var b5F=_n('text')
+_rz(z,b5F,'class',8,e,s,gg)
+var o6F=_oz(z,9,e,s,gg)
+_(b5F,o6F)
+_(a2F,b5F)
+_(l1F,a2F)
+var x7F=_n('view')
+_rz(z,x7F,'class',10,e,s,gg)
+var o8F=_n('text')
+_rz(z,o8F,'class',11,e,s,gg)
+var f9F=_oz(z,12,e,s,gg)
+_(o8F,f9F)
+_(x7F,o8F)
+_(l1F,x7F)
+_(cYF,l1F)
 _(oXF,cYF)
 _(r,oXF)
 return r
@@ -2199,273 +2238,273 @@ e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 d_[x[15]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var l1F=_n('view')
-var a2F=_oz(z,0,e,s,gg)
-_(l1F,a2F)
-_(r,l1F)
+var hAG=_n('view')
+var oBG=_oz(z,0,e,s,gg)
+_(hAG,oBG)
+_(r,hAG)
 return r
 }
 e_[x[15]]={f:m15,j:[],i:[],ti:[],ic:[]}
 d_[x[16]]={}
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
-var e4F=_n('view')
-var b5F=_mz(z,'uni-nav-bar',['fixed',-1,'statusBar',-1,'bind:__l',0,'bind:clickRight',1,'border',1,'data-event-opts',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var o6F=_n('view')
-_rz(z,o6F,'class',6,e,s,gg)
-var x7F=_v()
-_(o6F,x7F)
-var o8F=function(c0F,f9F,hAG,gg){
-var cCG=_mz(z,'view',['bindtap',11,'class',1,'data-event-opts',2],[],c0F,f9F,gg)
-var oDG=_oz(z,14,c0F,f9F,gg)
-_(cCG,oDG)
-_(hAG,cCG)
-return hAG
-}
-x7F.wxXCkey=2
-_2z(z,9,o8F,e,s,gg,x7F,'item','index','index')
-_(b5F,o6F)
-var lEG=_mz(z,'text',['class',15,'slot',1],[],e,s,gg)
-_(b5F,lEG)
-_(e4F,b5F)
-var aFG=_mz(z,'swiper',['bindchange',17,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
-var tGG=_n('swiper-item')
-var eHG=_mz(z,'scroll-view',['bindscrolltolower',22,'data-event-opts',1,'scrollY',2,'style',3],[],e,s,gg)
-var bIG=_v()
-_(eHG,bIG)
-var oJG=function(oLG,xKG,fMG,gg){
-var hOG=_mz(z,'common-list',['bind:__l',30,'bind:doSupport',1,'bind:follow',2,'data-event-opts',3,'index',4,'item',5,'vueId',6],[],oLG,xKG,gg)
-_(fMG,hOG)
-var oPG=_mz(z,'divider',['bind:__l',37,'vueId',1],[],oLG,xKG,gg)
-_(fMG,oPG)
-return fMG
-}
-bIG.wxXCkey=4
-_2z(z,28,oJG,e,s,gg,bIG,'item','index','index')
-var cQG=_mz(z,'load-more',['bind:__l',39,'loadmore',1,'vueId',2],[],e,s,gg)
-_(eHG,cQG)
-_(tGG,eHG)
+var oDG=_n('view')
+var lEG=_mz(z,'uni-nav-bar',['fixed',-1,'statusBar',-1,'bind:__l',0,'bind:clickRight',1,'border',1,'data-event-opts',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var aFG=_n('view')
+_rz(z,aFG,'class',6,e,s,gg)
+var tGG=_v()
 _(aFG,tGG)
-var oRG=_n('swiper-item')
-var lSG=_mz(z,'scroll-view',['scrollY',42,'style',1],[],e,s,gg)
-var aTG=_mz(z,'hot-cate',['bind:__l',44,'hotCate',1,'vueId',2],[],e,s,gg)
-_(lSG,aTG)
-var tUG=_n('view')
-_rz(z,tUG,'class',47,e,s,gg)
-var eVG=_n('view')
-_rz(z,eVG,'class',48,e,s,gg)
-var bWG=_n('text')
-_rz(z,bWG,'class',49,e,s,gg)
-_(eVG,bWG)
-var oXG=_oz(z,50,e,s,gg)
-_(eVG,oXG)
-_(tUG,eVG)
-_(lSG,tUG)
-var xYG=_mz(z,'swiper',['autoplay',51,'class',1,'duration',2,'indicatorDots',3,'interval',4],[],e,s,gg)
-var oZG=_n('swiper-item')
-var f1G=_mz(z,'image',['class',56,'mode',1,'src',2,'style',3],[],e,s,gg)
-_(oZG,f1G)
-_(xYG,oZG)
-var c2G=_n('swiper-item')
-var h3G=_mz(z,'image',['class',60,'mode',1,'src',2,'style',3],[],e,s,gg)
-_(c2G,h3G)
-_(xYG,c2G)
-var o4G=_n('swiper-item')
-var c5G=_mz(z,'image',['class',64,'mode',1,'src',2,'style',3],[],e,s,gg)
-_(o4G,c5G)
-_(xYG,o4G)
-_(lSG,xYG)
-var o6G=_mz(z,'divider',['bind:__l',68,'vueId',1],[],e,s,gg)
-_(lSG,o6G)
-var l7G=_n('view')
-_rz(z,l7G,'class',70,e,s,gg)
-var a8G=_oz(z,71,e,s,gg)
-_(l7G,a8G)
-_(lSG,l7G)
-var t9G=_v()
-_(lSG,t9G)
-var e0G=function(oBH,bAH,xCH,gg){
-var fEH=_mz(z,'topic-list',['bind:__l',76,'item',1,'vueId',2],[],oBH,bAH,gg)
-_(xCH,fEH)
-return xCH
+var eHG=function(oJG,bIG,xKG,gg){
+var fMG=_mz(z,'view',['bindtap',11,'class',1,'data-event-opts',2],[],oJG,bIG,gg)
+var cNG=_oz(z,14,oJG,bIG,gg)
+_(fMG,cNG)
+_(xKG,fMG)
+return xKG
 }
-t9G.wxXCkey=4
-_2z(z,74,e0G,e,s,gg,t9G,'item','index','index')
+tGG.wxXCkey=2
+_2z(z,9,eHG,e,s,gg,tGG,'item','index','index')
+_(lEG,aFG)
+var hOG=_mz(z,'text',['class',15,'slot',1],[],e,s,gg)
+_(lEG,hOG)
+_(oDG,lEG)
+var oPG=_mz(z,'swiper',['bindchange',17,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
+var cQG=_n('swiper-item')
+var oRG=_mz(z,'scroll-view',['bindscrolltolower',22,'data-event-opts',1,'scrollY',2,'style',3],[],e,s,gg)
+var lSG=_v()
 _(oRG,lSG)
-_(aFG,oRG)
-_(e4F,aFG)
-_(r,e4F)
+var aTG=function(eVG,tUG,bWG,gg){
+var xYG=_mz(z,'common-list',['bind:__l',30,'bind:doSupport',1,'bind:follow',2,'data-event-opts',3,'index',4,'item',5,'vueId',6],[],eVG,tUG,gg)
+_(bWG,xYG)
+var oZG=_mz(z,'divider',['bind:__l',37,'vueId',1],[],eVG,tUG,gg)
+_(bWG,oZG)
+return bWG
+}
+lSG.wxXCkey=4
+_2z(z,28,aTG,e,s,gg,lSG,'item','index','index')
+var f1G=_mz(z,'load-more',['bind:__l',39,'loadmore',1,'vueId',2],[],e,s,gg)
+_(oRG,f1G)
+_(cQG,oRG)
+_(oPG,cQG)
+var c2G=_n('swiper-item')
+var h3G=_mz(z,'scroll-view',['scrollY',42,'style',1],[],e,s,gg)
+var o4G=_mz(z,'hot-cate',['bind:__l',44,'hotCate',1,'vueId',2],[],e,s,gg)
+_(h3G,o4G)
+var c5G=_n('view')
+_rz(z,c5G,'class',47,e,s,gg)
+var o6G=_n('view')
+_rz(z,o6G,'class',48,e,s,gg)
+var l7G=_n('text')
+_rz(z,l7G,'class',49,e,s,gg)
+_(o6G,l7G)
+var a8G=_oz(z,50,e,s,gg)
+_(o6G,a8G)
+_(c5G,o6G)
+_(h3G,c5G)
+var t9G=_mz(z,'swiper',['autoplay',51,'class',1,'duration',2,'indicatorDots',3,'interval',4],[],e,s,gg)
+var e0G=_n('swiper-item')
+var bAH=_mz(z,'image',['class',56,'mode',1,'src',2,'style',3],[],e,s,gg)
+_(e0G,bAH)
+_(t9G,e0G)
+var oBH=_n('swiper-item')
+var xCH=_mz(z,'image',['class',60,'mode',1,'src',2,'style',3],[],e,s,gg)
+_(oBH,xCH)
+_(t9G,oBH)
+var oDH=_n('swiper-item')
+var fEH=_mz(z,'image',['class',64,'mode',1,'src',2,'style',3],[],e,s,gg)
+_(oDH,fEH)
+_(t9G,oDH)
+_(h3G,t9G)
+var cFH=_mz(z,'divider',['bind:__l',68,'vueId',1],[],e,s,gg)
+_(h3G,cFH)
+var hGH=_n('view')
+_rz(z,hGH,'class',70,e,s,gg)
+var oHH=_oz(z,71,e,s,gg)
+_(hGH,oHH)
+_(h3G,hGH)
+var cIH=_v()
+_(h3G,cIH)
+var oJH=function(aLH,lKH,tMH,gg){
+var bOH=_mz(z,'topic-list',['bind:__l',76,'item',1,'vueId',2],[],aLH,lKH,gg)
+_(tMH,bOH)
+return tMH
+}
+cIH.wxXCkey=4
+_2z(z,74,oJH,e,s,gg,cIH,'item','index','index')
+_(c2G,h3G)
+_(oPG,c2G)
+_(oDG,oPG)
+_(r,oDG)
 return r
 }
 e_[x[16]]={f:m16,j:[],i:[],ti:[],ic:[]}
 d_[x[17]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var hGH=_n('view')
-var oHH=_v()
-_(hGH,oHH)
-if(_oz(z,0,e,s,gg)){oHH.wxVkey=1
-var cIH=_n('view')
-_rz(z,cIH,'class',1,e,s,gg)
-var oJH=_oz(z,2,e,s,gg)
-_(cIH,oJH)
-_(oHH,cIH)
-var lKH=_n('view')
-_rz(z,lKH,'class',3,e,s,gg)
-var aLH=_v()
-_(lKH,aLH)
-var tMH=function(bOH,eNH,oPH,gg){
-var oRH=_mz(z,'view',['bindtap',8,'class',1,'data-event-opts',2,'hoverClass',3],[],bOH,eNH,gg)
-var fSH=_oz(z,12,bOH,eNH,gg)
+var xQH=_n('view')
+var oRH=_v()
+_(xQH,oRH)
+if(_oz(z,0,e,s,gg)){oRH.wxVkey=1
+var fSH=_n('view')
+_rz(z,fSH,'class',1,e,s,gg)
+var cTH=_oz(z,2,e,s,gg)
+_(fSH,cTH)
 _(oRH,fSH)
-_(oPH,oRH)
-return oPH
+var hUH=_n('view')
+_rz(z,hUH,'class',3,e,s,gg)
+var oVH=_v()
+_(hUH,oVH)
+var cWH=function(lYH,oXH,aZH,gg){
+var e2H=_mz(z,'view',['bindtap',8,'class',1,'data-event-opts',2,'hoverClass',3],[],lYH,oXH,gg)
+var b3H=_oz(z,12,lYH,oXH,gg)
+_(e2H,b3H)
+_(aZH,e2H)
+return aZH
 }
-aLH.wxXCkey=2
-_2z(z,6,tMH,e,s,gg,aLH,'item','index','index')
-_(oHH,lKH)
+oVH.wxXCkey=2
+_2z(z,6,cWH,e,s,gg,oVH,'item','index','index')
+_(oRH,hUH)
 }
-else{oHH.wxVkey=2
-var cTH=_v()
-_(oHH,cTH)
-var hUH=function(cWH,oVH,oXH,gg){
-var aZH=_mz(z,'common-list',['bind:__l',17,'index',1,'item',2,'vueId',3],[],cWH,oVH,gg)
-_(oXH,aZH)
-return oXH
+else{oRH.wxVkey=2
+var o4H=_v()
+_(oRH,o4H)
+var x5H=function(f7H,o6H,c8H,gg){
+var o0H=_mz(z,'common-list',['bind:__l',17,'index',1,'item',2,'vueId',3],[],f7H,o6H,gg)
+_(c8H,o0H)
+return c8H
 }
-cTH.wxXCkey=4
-_2z(z,15,hUH,e,s,gg,cTH,'item','index','index')
+o4H.wxXCkey=4
+_2z(z,15,x5H,e,s,gg,o4H,'item','index','index')
 }
-oHH.wxXCkey=1
-oHH.wxXCkey=3
-_(r,hGH)
+oRH.wxXCkey=1
+oRH.wxXCkey=3
+_(r,xQH)
 return r
 }
 e_[x[17]]={f:m17,j:[],i:[],ti:[],ic:[]}
 d_[x[18]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var e2H=_n('view')
-var o4H=_mz(z,'topic-info',['bind:__l',0,'info',1,'vueId',1],[],e,s,gg)
-_(e2H,o4H)
-var x5H=_mz(z,'divider',['bind:__l',3,'vueId',1],[],e,s,gg)
-_(e2H,x5H)
-var o6H=_v()
-_(e2H,o6H)
-var f7H=function(h9H,c8H,o0H,gg){
-var oBI=_mz(z,'view',['class',9,'hoverClass',1],[],h9H,c8H,gg)
-var lCI=_n('text')
-_rz(z,lCI,'class',11,h9H,c8H,gg)
-_(oBI,lCI)
-var aDI=_n('text')
-_rz(z,aDI,'class',12,h9H,c8H,gg)
-var tEI=_oz(z,13,h9H,c8H,gg)
-_(aDI,tEI)
+var oBI=_n('view')
+var aDI=_mz(z,'topic-info',['bind:__l',0,'info',1,'vueId',1],[],e,s,gg)
 _(oBI,aDI)
-_(o0H,oBI)
-return o0H
-}
-o6H.wxXCkey=2
-_2z(z,7,f7H,e,s,gg,o6H,'item','index','index')
-var eFI=_mz(z,'divider',['bind:__l',14,'vueId',1],[],e,s,gg)
-_(e2H,eFI)
-var bGI=_n('view')
-_rz(z,bGI,'class',16,e,s,gg)
-var oHI=_v()
-_(bGI,oHI)
-var xII=function(fKI,oJI,cLI,gg){
-var oNI=_mz(z,'view',['bindtap',21,'class',1,'data-event-opts',2],[],fKI,oJI,gg)
-var cOI=_oz(z,24,fKI,oJI,gg)
+var tEI=_mz(z,'divider',['bind:__l',3,'vueId',1],[],e,s,gg)
+_(oBI,tEI)
+var eFI=_v()
+_(oBI,eFI)
+var bGI=function(xII,oHI,oJI,gg){
+var cLI=_mz(z,'view',['class',9,'hoverClass',1],[],xII,oHI,gg)
+var hMI=_n('text')
+_rz(z,hMI,'class',11,xII,oHI,gg)
+_(cLI,hMI)
+var oNI=_n('text')
+_rz(z,oNI,'class',12,xII,oHI,gg)
+var cOI=_oz(z,13,xII,oHI,gg)
 _(oNI,cOI)
 _(cLI,oNI)
-return cLI
+_(oJI,cLI)
+return oJI
 }
-oHI.wxXCkey=2
-_2z(z,19,xII,e,s,gg,oHI,'item','index','index')
-_(e2H,bGI)
-var b3H=_v()
-_(e2H,b3H)
-if(_oz(z,25,e,s,gg)){b3H.wxVkey=1
-var oPI=_v()
-_(b3H,oPI)
-var lQI=function(tSI,aRI,eTI,gg){
-var oVI=_mz(z,'common-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],tSI,aRI,gg)
-_(eTI,oVI)
-var xWI=_mz(z,'divider',['bind:__l',34,'vueId',1],[],tSI,aRI,gg)
-_(eTI,xWI)
-return eTI
+eFI.wxXCkey=2
+_2z(z,7,bGI,e,s,gg,eFI,'item','index','index')
+var oPI=_mz(z,'divider',['bind:__l',14,'vueId',1],[],e,s,gg)
+_(oBI,oPI)
+var lQI=_n('view')
+_rz(z,lQI,'class',16,e,s,gg)
+var aRI=_v()
+_(lQI,aRI)
+var tSI=function(bUI,eTI,oVI,gg){
+var oXI=_mz(z,'view',['bindtap',21,'class',1,'data-event-opts',2],[],bUI,eTI,gg)
+var fYI=_oz(z,24,bUI,eTI,gg)
+_(oXI,fYI)
+_(oVI,oXI)
+return oVI
 }
-oPI.wxXCkey=4
-_2z(z,28,lQI,e,s,gg,oPI,'item','index','index')
+aRI.wxXCkey=2
+_2z(z,19,tSI,e,s,gg,aRI,'item','index','index')
+_(oBI,lQI)
+var lCI=_v()
+_(oBI,lCI)
+if(_oz(z,25,e,s,gg)){lCI.wxVkey=1
+var cZI=_v()
+_(lCI,cZI)
+var h1I=function(c3I,o2I,o4I,gg){
+var a6I=_mz(z,'common-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],c3I,o2I,gg)
+_(o4I,a6I)
+var t7I=_mz(z,'divider',['bind:__l',34,'vueId',1],[],c3I,o2I,gg)
+_(o4I,t7I)
+return o4I
 }
-else{b3H.wxVkey=2
-var oXI=_mz(z,'no-thing',['bind:__l',36,'vueId',1],[],e,s,gg)
-_(b3H,oXI)
+cZI.wxXCkey=4
+_2z(z,28,h1I,e,s,gg,cZI,'item','index','index')
 }
-var fYI=_mz(z,'load-more',['bind:__l',38,'loadmore',1,'vueId',2],[],e,s,gg)
-_(e2H,fYI)
-b3H.wxXCkey=1
-b3H.wxXCkey=3
-b3H.wxXCkey=3
-_(r,e2H)
+else{lCI.wxVkey=2
+var e8I=_mz(z,'no-thing',['bind:__l',36,'vueId',1],[],e,s,gg)
+_(lCI,e8I)
+}
+var b9I=_mz(z,'load-more',['bind:__l',38,'loadmore',1,'vueId',2],[],e,s,gg)
+_(oBI,b9I)
+lCI.wxXCkey=1
+lCI.wxXCkey=3
+lCI.wxXCkey=3
+_(r,oBI)
 return r
 }
 e_[x[18]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[19]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var h1I=_n('view')
-var o2I=_mz(z,'scroll-view',['scrollWithAnimation',-1,'scrollX',-1,'class',0,'scrollIntoView',1,'style',1],[],e,s,gg)
-var c3I=_v()
-_(o2I,c3I)
-var o4I=function(a6I,l5I,t7I,gg){
-var b9I=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'id',3],[],a6I,l5I,gg)
-var o0I=_oz(z,11,a6I,l5I,gg)
-_(b9I,o0I)
-_(t7I,b9I)
-return t7I
-}
-c3I.wxXCkey=2
-_2z(z,5,o4I,e,s,gg,c3I,'item','index','index')
-_(h1I,o2I)
-var xAJ=_mz(z,'swiper',['bindchange',12,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
-var oBJ=_v()
-_(xAJ,oBJ)
-var fCJ=function(hEJ,cDJ,oFJ,gg){
-var oHJ=_n('swiper-item')
-var lIJ=_mz(z,'scroll-view',['bindscrolltolower',21,'data-event-opts',1,'scrollY',2,'style',3],[],hEJ,cDJ,gg)
-var aJJ=_v()
+var xAJ=_n('view')
+var oBJ=_mz(z,'scroll-view',['scrollWithAnimation',-1,'scrollX',-1,'class',0,'scrollIntoView',1,'style',1],[],e,s,gg)
+var fCJ=_v()
+_(oBJ,fCJ)
+var cDJ=function(oFJ,hEJ,cGJ,gg){
+var lIJ=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2,'id',3],[],oFJ,hEJ,gg)
+var aJJ=_oz(z,11,oFJ,hEJ,gg)
 _(lIJ,aJJ)
-if(_oz(z,25,hEJ,cDJ,gg)){aJJ.wxVkey=1
-var tKJ=_v()
-_(aJJ,tKJ)
-var eLJ=function(oNJ,bMJ,xOJ,gg){
-var fQJ=_mz(z,'topic-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],oNJ,bMJ,gg)
-_(xOJ,fQJ)
-var cRJ=_mz(z,'divider',['bind:__l',34,'vueId',1],[],oNJ,bMJ,gg)
-_(xOJ,cRJ)
-return xOJ
+_(cGJ,lIJ)
+return cGJ
 }
-tKJ.wxXCkey=4
-_2z(z,28,eLJ,hEJ,cDJ,gg,tKJ,'item2','index2','index2')
-var hSJ=_mz(z,'load-more',['bind:__l',36,'loadmore',1,'vueId',2],[],hEJ,cDJ,gg)
-_(aJJ,hSJ)
+fCJ.wxXCkey=2
+_2z(z,5,cDJ,e,s,gg,fCJ,'item','index','index')
+_(xAJ,oBJ)
+var tKJ=_mz(z,'swiper',['bindchange',12,'current',1,'data-event-opts',2,'duration',3,'style',4],[],e,s,gg)
+var eLJ=_v()
+_(tKJ,eLJ)
+var bMJ=function(xOJ,oNJ,oPJ,gg){
+var cRJ=_n('swiper-item')
+var hSJ=_mz(z,'scroll-view',['bindscrolltolower',21,'data-event-opts',1,'scrollY',2,'style',3],[],xOJ,oNJ,gg)
+var oTJ=_v()
+_(hSJ,oTJ)
+if(_oz(z,25,xOJ,oNJ,gg)){oTJ.wxVkey=1
+var cUJ=_v()
+_(oTJ,cUJ)
+var oVJ=function(aXJ,lWJ,tYJ,gg){
+var b1J=_mz(z,'topic-list',['bind:__l',30,'index',1,'item',2,'vueId',3],[],aXJ,lWJ,gg)
+_(tYJ,b1J)
+var o2J=_mz(z,'divider',['bind:__l',34,'vueId',1],[],aXJ,lWJ,gg)
+_(tYJ,o2J)
+return tYJ
 }
-else{aJJ.wxVkey=2
-var oTJ=_mz(z,'no-thing',['bind:__l',39,'vueId',1],[],hEJ,cDJ,gg)
-_(aJJ,oTJ)
+cUJ.wxXCkey=4
+_2z(z,28,oVJ,xOJ,oNJ,gg,cUJ,'item2','index2','index2')
+var x3J=_mz(z,'load-more',['bind:__l',36,'loadmore',1,'vueId',2],[],xOJ,oNJ,gg)
+_(oTJ,x3J)
 }
-aJJ.wxXCkey=1
-aJJ.wxXCkey=3
-aJJ.wxXCkey=3
-_(oHJ,lIJ)
-_(oFJ,oHJ)
-return oFJ
+else{oTJ.wxVkey=2
+var o4J=_mz(z,'no-thing',['bind:__l',39,'vueId',1],[],xOJ,oNJ,gg)
+_(oTJ,o4J)
 }
-oBJ.wxXCkey=4
-_2z(z,19,fCJ,e,s,gg,oBJ,'item','index','index')
-_(h1I,xAJ)
-_(r,h1I)
+oTJ.wxXCkey=1
+oTJ.wxXCkey=3
+oTJ.wxXCkey=3
+_(cRJ,hSJ)
+_(oPJ,cRJ)
+return oPJ
+}
+eLJ.wxXCkey=4
+_2z(z,19,bMJ,e,s,gg,eLJ,'item','index','index')
+_(xAJ,tKJ)
+_(r,xAJ)
 return r
 }
 e_[x[19]]={f:m19,j:[],i:[],ti:[],ic:[]}
