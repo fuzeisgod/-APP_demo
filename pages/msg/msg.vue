@@ -17,11 +17,15 @@
 </template>
 
 <script>
+	import uniBadge from '@/components/uni-ui/uni-badge/uni-badge.vue';
 	export default {
 		data() {
 			return {
 				
 			}
+		},
+		components:{
+			uniBadge
 		},
 		methods: {
 			
