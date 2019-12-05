@@ -202,7 +202,7 @@
 			loadMore
 		},
 		onLoad() {
-			let res = uni.getSystemInfo({
+			uni.getSystemInfo({
 				success: res => {
 					// px
 					this.scrollH = res.windowHeight - uni.upx2px(100)
