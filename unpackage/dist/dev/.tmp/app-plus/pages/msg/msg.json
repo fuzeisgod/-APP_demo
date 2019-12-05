@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "消息列表",
+  "enablePullDownRefresh": true,
   "titleNView": {
     "buttons": [
       {
@@ -21,6 +22,8 @@
     ]
   },
   "usingComponents": {
-    "uni-badge": "/components/uni-ui/uni-badge/uni-badge"
+    "no-thing": "/components/common/no-thing",
+    "msg-list": "/components/msg/msg-list",
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup"
   }
 }
