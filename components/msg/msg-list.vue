@@ -1,5 +1,5 @@
 <template>
-	<view class="flex align-center p-2 border-bottom border-light-secondary" hover-class="bg-light">
+	<view class="flex align-center p-2 border-bottom border-light-secondary" hover-class="bg-light" @click="open">
 		<image :src="item.avater" style="height: 80rpx;width: 80rpx;" class="rounded-circle mr-2" mode=""></image>
 		<view class="flex flex-column flex-1">
 			<view class="flex align-center justify-between">
@@ -23,6 +23,14 @@
 		},
 		components:{
 			uniBadge
+		},
+		methods:{
+			// 打开聊天页
+			open(){
+				uni.navigateTo({
+					url: '../../pages/user-chat/user-chat',
+				});
+			}
 		}
 	}
 </script>
