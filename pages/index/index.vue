@@ -105,7 +105,7 @@
 		// 监听点击导航栏搜索框
 		onNavigationBarSearchInputClicked() {
 			uni.navigateTo({
-				url: '../search/search'
+				url: '../search/search?type=post'
 			});
 		},
 		// 监听导航按钮点击事件

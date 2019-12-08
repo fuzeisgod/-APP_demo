@@ -97,7 +97,9 @@
 			popupEvent(e) {
 				switch (e) {
 					case 'friend':
-						console.log('添加好友')
+						uni.navigateTo({
+							url: '../search/search?type=user',
+						});
 						break;
 					case 'clear':
 						console.log('清除列表')

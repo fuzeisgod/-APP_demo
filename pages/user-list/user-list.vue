@@ -81,7 +81,7 @@
 		// 监听点击输入框事件
 		onNavigationBarSearchInputClicked() {
 			uni.navigateTo({
-				url: '../search/search'
+				url: '../search/search?type=user'
 			});
 		},
 		// 监听点击取消按钮
