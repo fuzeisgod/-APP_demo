@@ -92,7 +92,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 998;
+		z-index: 9998;
 		overflow: hidden
 	}
 

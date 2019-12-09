@@ -1,0 +1,16 @@
+{
+  "titleNView": {
+    "buttons": [
+      {
+        "type": "menu",
+        "float": "right"
+      }
+    ]
+  },
+  "usingComponents": {
+    "divider": "/components/common/divider",
+    "common-list": "/components/common/common-list",
+    "bottom-input": "/components/common/bottom-input",
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup"
+  }
+}

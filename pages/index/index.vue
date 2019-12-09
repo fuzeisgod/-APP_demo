@@ -123,8 +123,10 @@
 				})
 			},
 			doSupport(e) {
+				// 拿到当前的选项卡对应的list
+				let list = this.newsList[this.tabIndex].list
 				// 拿到当前对象
-				let item = this.list[e.index]
+				let item = list[e.index]
 				let msg = e.type === 'support' ? '顶' : '踩'
 				// 之前没有操作过
 				if (item.support.type === '') {

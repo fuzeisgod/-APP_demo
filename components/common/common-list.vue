@@ -20,9 +20,12 @@
 		</view>
 		<!-- 标题 -->
 		<view class="font my-1" @click="openDetail">{{item.title}}</view>
-		<!-- 图片 -->
-		<image v-if="item.titlepic" :src="item.titlepic" class="rounded w-100" style="height: 350rpx;" mode="scaleToFill"
-		 @click="openDetail"></image>
+		<!-- 帖子详情(如果插槽有值，则会覆盖原来插槽内的代码段) -->
+		<slot>
+			<!-- 图片 -->
+			<image v-if="item.titlepic" :src="item.titlepic" class="rounded w-100" style="height: 350rpx;" mode="scaleToFill"
+			 @click="openDetail"></image>
+		</slot>
 		<!-- 图标按钮 -->
 		<view class="flex align-center">
 			<!-- 顶 -->
@@ -37,11 +40,11 @@
 				<text class=" iconfont icon-cai mr-2"></text>
 				<text>{{item.support.unsupport_count > 0 ? item.support.unsupport_count : '反对'}}</text>
 			</view>
-			<view class="flex align-center justify-center flex-1 animated faster" hover-class="jello text-main" @click="openDetail()">
+			<view class="flex align-center justify-center flex-1 animated faster" hover-class="jello text-main" @click="doComment">
 				<text class="iconfont icon-pinglun2 mr-2"></text>
 				<text>{{item.comment_count > 0 ? item.comment_count : '评论'}}</text>
 			</view>
-			<view class="flex align-center justify-center flex-1 animated faster" hover-class="jello text-main" @click="openDetail()">
+			<view class="flex align-center justify-center flex-1 animated faster" hover-class="jello text-main" @click="doShare">
 				<text class="iconfont icon-fenxiang mr-2"></text>
 				<text>{{item.share_num > 0 ? item.share_num : '分享'}}</text>
 			</view>
@@ -53,7 +56,14 @@
 	export default {
 		props: {
 			item: Object,
-			index: Number
+			index: {
+				type: Number,
+				default: -1
+			},
+			isDetail: {
+				type: Boolean,
+				default: false
+			}
 		},
 		methods: {
 			// 打开个人空间
@@ -68,7 +78,11 @@
 			},
 			// 进入详情页
 			openDetail() {
-
+				// 处于详情页中
+				if (this.isDetail) return
+				uni.navigateTo({
+					url: '../../pages/detail/detail?detail=' + JSON.stringify(this.item),
+				});
 			},
 			// 顶踩操作
 			doSupport(type) {
@@ -77,6 +91,20 @@
 					type,
 					index: this.index
 				})
+			},
+			// 评论
+			doComment() {
+				if (!this.isDetail) {
+					return this.openDetail()
+				}
+				this.$emit('doComment')
+			},
+			// 分享
+			doShare() {
+				if (!this.isDetail) {
+					return this.openDetail()
+				}
+				this.$emit('doShare')
 			}
 		}
 	}
