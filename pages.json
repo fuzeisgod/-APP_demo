@@ -59,7 +59,16 @@
 			}
 		}, {
 			"path": "pages/my/my",
-			"style": {}
+			"style": {
+				"navigationBarTitleText":"我的",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"type":"menu"
+						}]
+					}
+				}
+			}
 		}, {
 			"path": "pages/demo/demo",
 			"style": {
@@ -170,6 +179,18 @@
 						}]
 					}
 				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set/user-set",
+            "style" : {
+				"navigationBarTitleText":"设置"
+			}
+        }
+        ,{
+            "path" : "pages/user-password/user-password",
+            "style" : {
+				"navigationBarTitleText":"修改密码"
 			}
         }
     ],

@@ -35,26 +35,14 @@
 		<view style="height: 100rpx;"></view>
 		<bottom-input @submit="submit"></bottom-input>
 
-		<uni-popup ref="popup" type="bottom">
-			<view class="text-center py-2 font-md border-bottom">分享到</view>
-			<view class="flex align-center">
-				<view class="flex-1 flex flex-column align-center justify-center py-2">
-					<view class="rounded-circle iconfont icon-QQ bg-primary text-white flex align-center justify-center font-lg" style="height: 100rpx;width: 100rpx;"></view>
-					<text class="font-sm mt-1 text-muted">QQ好友</text>
-				</view>
-				<view class="flex-1">1</view>
-				<view class="flex-1">1</view>
-				<view class="flex-1">1</view>
-			</view>
-			<view class="text-center py-2 font-md border-top">取消</view>
-		</uni-popup>
+		<more-share ref="share"></more-share>
 	</view>
 </template>
 
 <script>
 	import commonList from '@/components/common/common-list.vue';
 	import bottomInput from '@/components/common/bottom-input.vue';
-	import uniPopup from '@/components/uni-ui/uni-popup/uni-popup.vue';
+	import moreShare from '@/components/common/more-share.vue';
 	export default {
 		data() {
 			return {
@@ -83,10 +71,10 @@
 			}
 		},
 		onNavigationBarButtonTap() {
-			this.$refs.popup.open()
+			this.$refs.share.open()
 		},
 		onBackPress() {
-			this.$refs.popup.close()
+			this.$refs.share.close()
 		},
 		methods: {
 			init(data) {
@@ -159,7 +147,7 @@
 		components: {
 			commonList,
 			bottomInput,
-			uniPopup
+			moreShare
 		},
 		onLoad(e) {
 			// 初始化
