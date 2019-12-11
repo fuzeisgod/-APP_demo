@@ -5359,6 +5359,9 @@ to {
 .bg-main{
 	background-color: #FF4A6A !important;
 }
+.bg-main-disabled{
+	background-color: #F87F97 !important;
+}
 .text-main{
 	color: #FF4A6A;
 }

@@ -13,7 +13,9 @@
     "pages/user-chat/user-chat",
     "pages/detail/detail",
     "pages/user-set/user-set",
-    "pages/user-password/user-password"
+    "pages/user-password/user-password",
+    "pages/user-email/user-email",
+    "pages/user-info/user-info"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -60,7 +62,7 @@
     "autoclose": false
   },
   "appname": "社区交友",
-  "compilerVersion": "2.4.5",
+  "compilerVersion": "2.4.6",
   "usingComponents": {
     "divider": "/components/common/divider",
     "no-thing": "/components/common/no-thing"
