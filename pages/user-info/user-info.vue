@@ -91,12 +91,14 @@
 				return emotionArray[this.emotionIndex]
 			}
 		},
+		// 监听返回
 		onBackPress() {
 			if (this.$refs.mpvueCityPicker.showPicker) {
 				this.$refs.mpvueCityPicker.pickerCancel();
 				return true;
 			}
 		},
+		// 监听页面卸载
 		onUnload() {
 			if (this.$refs.mpvueCityPicker.showPicker) {
 				this.$refs.mpvueCityPicker.pickerCancel()

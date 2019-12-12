@@ -15,7 +15,10 @@
     "pages/user-set/user-set",
     "pages/user-password/user-password",
     "pages/user-email/user-email",
-    "pages/user-info/user-info"
+    "pages/user-info/user-info",
+    "pages/user-feedback/user-feedback",
+    "pages/about/about",
+    "pages/login/login"
   ],
   "window": {
     "navigationBarTextStyle": "black",

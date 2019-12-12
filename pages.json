@@ -60,11 +60,11 @@
 		}, {
 			"path": "pages/my/my",
 			"style": {
-				"navigationBarTitleText":"我的",
-				"app-plus":{
-					"titleNView":{
-						"buttons":[{
-							"type":"menu"
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "menu"
 						}]
 					}
 				}
@@ -121,10 +121,9 @@
 					}
 				}
 			}
-		}
-	    ,{
-            "path" : "pages/user-list/user-list",
-            "style" : {
+		}, {
+			"path": "pages/user-list/user-list",
+			"style": {
 				"app-plus": {
 					// 导航栏配置
 					"titleNView": {
@@ -149,14 +148,13 @@
 					"animationType": "slide-in-left"
 				}
 			}
-        }
-        ,{
-            "path" : "pages/user-chat/user-chat",
-            "style" : {
-				"app-plus":{
-					"bounce":"none",
-					"titleNView":{
-						"buttons":[{
+		}, {
+			"path": "pages/user-chat/user-chat",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
 							"color": "#333333",
 							"colorPressed": "#FD597C",
 							"float": "right",
@@ -167,45 +165,57 @@
 					}
 				}
 			}
-        }
-        ,{
-            "path" : "pages/detail/detail",
-            "style" : {
-				"app-plus":{
-					"titleNView":{
-						"buttons":[{
-							"type":"menu",
-							"float":"right"
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "menu",
+							"float": "right"
 						}]
 					}
 				}
 			}
-        }
-        ,{
-            "path" : "pages/user-set/user-set",
-            "style" : {
-				"navigationBarTitleText":"设置"
+		}, {
+			"path": "pages/user-set/user-set",
+			"style": {
+				"navigationBarTitleText": "设置"
 			}
-        }
-        ,{
-            "path" : "pages/user-password/user-password",
-            "style" : {
-				"navigationBarTitleText":"修改密码"
+		}, {
+			"path": "pages/user-password/user-password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
 			}
-        }
-        ,{
-            "path" : "pages/user-email/user-email",
-            "style" : {
-				"navigationBarTitleText":"绑定邮箱"
+		}, {
+			"path": "pages/user-email/user-email",
+			"style": {
+				"navigationBarTitleText": "绑定邮箱"
 			}
-        }
-        ,{
-            "path" : "pages/user-info/user-info",
-            "style" : {
-				"navigationBarTitleText":"修改资料"
+		}, {
+			"path": "pages/user-info/user-info",
+			"style": {
+				"navigationBarTitleText": "修改资料"
 			}
-        }
-    ],
+		}, {
+			"path": "pages/user-feedback/user-feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		}, {
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "关于社区"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "社区交友",
