@@ -68,7 +68,9 @@
 		methods: {
 			// 打开个人空间
 			openSpace() {
-
+				uni.navigateTo({
+					url: '/pages/user-space/user-space'
+				});
 			},
 			// 关注
 			follow() {

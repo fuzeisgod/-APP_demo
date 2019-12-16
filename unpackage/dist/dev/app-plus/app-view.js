@@ -2464,11 +2464,57 @@ Z([3,'primary'])
 Z([3,'退出登录'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_42);return __WXML_GLOBAL__.ops_cached.$gwx_42
 }
+function gz$gwx_43(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_43)return __WXML_GLOBAL__.ops_cached.$gwx_43
+__WXML_GLOBAL__.ops_cached.$gwx_43=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'flex align-center p-3 border-bottom border-light-secondary'])
+Z([3,'rounded-circle'])
+Z([3,'/static/default.jpg'])
+Z([3,'width:180rpx;height:180rpx;'])
+Z([3,'pl-3 flex flex-column flex-1'])
+Z([3,'flex align-center'])
+Z([3,'flex-1 flex flex-column align-center justify-center'])
+Z([3,'font-lg font-weight-bold'])
+Z([3,'1'])
+Z([3,'font text-muted'])
+Z([3,'粉丝'])
+Z(z[6])
+Z(z[7])
+Z(z[8])
+Z(z[9])
+Z(z[10])
+Z(z[6])
+Z(z[7])
+Z(z[8])
+Z(z[9])
+Z(z[10])
+Z([3,'flex justify-center align-center pt-1'])
+Z([3,'bg-main text-white'])
+Z([3,'mini'])
+Z([3,'width:80%;'])
+Z([3,'primary'])
+Z([3,'关注'])
+Z(z[5])
+Z([3,'height:100rpx;'])
+Z([3,'index'])
+Z([3,'item'])
+Z([[7],[3,'tabBars']])
+Z(z[29])
+Z([3,'__e'])
+Z([[4],[[5],[[5],[1,'flex-1 flex align-center justify-center']],[[2,'?:'],[[2,'==='],[[7],[3,'index']],[[7],[3,'tabIndex']]],[1,'font-lg font-weight-bold text-main'],[1,'']]]])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'changeTab']],[[4],[[5],[[7],[3,'index']]]]]]]]]]]])
+Z([a,[[2,'+'],[[2,'+'],[1,''],[[6],[[7],[3,'item']],[3,'name']]],[1,'']]])
+Z([[2,'==='],[[7],[3,'tabIndex']],[1,0]])
+Z([3,'首页'])
+Z([3,'帖子/动态'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_43);return __WXML_GLOBAL__.ops_cached.$gwx_43
+}
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/common/bottom-input.wxml','./components/common/common-list.wxml','./components/common/divider.wxml','./components/common/load-more.wxml','./components/common/more-share.wxml','./components/common/no-thing.wxml','./components/common/other-login.wxml','./components/common/upload-image.wxml','./components/msg/msg-list.wxml','./components/news/hot-cate.wxml','./components/news/topic-list.wxml','./components/topic-detail/topic-info.wxml','./components/uni-ui/mpvue-citypicker/mpvueCityPicker.wxml','./components/uni-ui/uni-badge/uni-badge.wxml','./components/uni-ui/uni-collapse-item/uni-collapse-item.wxml','./components/uni-ui/uni-collapse/uni-collapse.wxml','./components/uni-ui/uni-icons/uni-icons.wxml','./components/uni-ui/uni-list-item/uni-list-item.wxml','./components/uni-ui/uni-nav-bar/uni-nav-bar.wxml','./components/uni-ui/uni-popup/uni-popup.wxml','./components/uni-ui/uni-status-bar/uni-status-bar.wxml','./components/user-chat/user-chat-list.wxml','./components/user-list/user-list.wxml','./pages/about/about.wxml','./pages/add-input/add-input.wxml','./pages/demo/demo.wxml','./pages/detail/detail.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/msg/msg.wxml','./pages/my/my.wxml','./pages/news/news.wxml','./pages/search/search.wxml','./pages/topic-detail/topic-detail.wxml','./pages/topic-nav/topic-nav.wxml','./pages/user-chat/user-chat.wxml','./pages/user-email/user-email.wxml','./pages/user-feedback/user-feedback.wxml','./pages/user-info/user-info.wxml','./pages/user-list/user-list.wxml','./pages/user-password/user-password.wxml','./pages/user-set/user-set.wxml'];d_[x[0]]={}
+var x=['./components/common/bottom-input.wxml','./components/common/common-list.wxml','./components/common/divider.wxml','./components/common/load-more.wxml','./components/common/more-share.wxml','./components/common/no-thing.wxml','./components/common/other-login.wxml','./components/common/upload-image.wxml','./components/msg/msg-list.wxml','./components/news/hot-cate.wxml','./components/news/topic-list.wxml','./components/topic-detail/topic-info.wxml','./components/uni-ui/mpvue-citypicker/mpvueCityPicker.wxml','./components/uni-ui/uni-badge/uni-badge.wxml','./components/uni-ui/uni-collapse-item/uni-collapse-item.wxml','./components/uni-ui/uni-collapse/uni-collapse.wxml','./components/uni-ui/uni-icons/uni-icons.wxml','./components/uni-ui/uni-list-item/uni-list-item.wxml','./components/uni-ui/uni-nav-bar/uni-nav-bar.wxml','./components/uni-ui/uni-popup/uni-popup.wxml','./components/uni-ui/uni-status-bar/uni-status-bar.wxml','./components/user-chat/user-chat-list.wxml','./components/user-list/user-list.wxml','./pages/about/about.wxml','./pages/add-input/add-input.wxml','./pages/demo/demo.wxml','./pages/detail/detail.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/msg/msg.wxml','./pages/my/my.wxml','./pages/news/news.wxml','./pages/search/search.wxml','./pages/topic-detail/topic-detail.wxml','./pages/topic-nav/topic-nav.wxml','./pages/user-chat/user-chat.wxml','./pages/user-email/user-email.wxml','./pages/user-feedback/user-feedback.wxml','./pages/user-info/user-info.wxml','./pages/user-list/user-list.wxml','./pages/user-password/user-password.wxml','./pages/user-set/user-set.wxml','./pages/user-space/user-space.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=_n('view')
@@ -4334,6 +4380,99 @@ _(r,c5U)
 return r
 }
 e_[x[41]]={f:m41,j:[],i:[],ti:[],ic:[]}
+d_[x[42]]={}
+var m42=function(e,s,r,gg){
+var z=gz$gwx_43()
+var cFV=_n('view')
+var oHV=_n('view')
+_rz(z,oHV,'class',0,e,s,gg)
+var cIV=_mz(z,'image',['class',1,'src',1,'style',2],[],e,s,gg)
+_(oHV,cIV)
+var oJV=_n('view')
+_rz(z,oJV,'class',4,e,s,gg)
+var lKV=_n('view')
+_rz(z,lKV,'class',5,e,s,gg)
+var aLV=_n('view')
+_rz(z,aLV,'class',6,e,s,gg)
+var tMV=_n('text')
+_rz(z,tMV,'class',7,e,s,gg)
+var eNV=_oz(z,8,e,s,gg)
+_(tMV,eNV)
+_(aLV,tMV)
+var bOV=_n('text')
+_rz(z,bOV,'class',9,e,s,gg)
+var oPV=_oz(z,10,e,s,gg)
+_(bOV,oPV)
+_(aLV,bOV)
+_(lKV,aLV)
+var xQV=_n('view')
+_rz(z,xQV,'class',11,e,s,gg)
+var oRV=_n('text')
+_rz(z,oRV,'class',12,e,s,gg)
+var fSV=_oz(z,13,e,s,gg)
+_(oRV,fSV)
+_(xQV,oRV)
+var cTV=_n('text')
+_rz(z,cTV,'class',14,e,s,gg)
+var hUV=_oz(z,15,e,s,gg)
+_(cTV,hUV)
+_(xQV,cTV)
+_(lKV,xQV)
+var oVV=_n('view')
+_rz(z,oVV,'class',16,e,s,gg)
+var cWV=_n('text')
+_rz(z,cWV,'class',17,e,s,gg)
+var oXV=_oz(z,18,e,s,gg)
+_(cWV,oXV)
+_(oVV,cWV)
+var lYV=_n('text')
+_rz(z,lYV,'class',19,e,s,gg)
+var aZV=_oz(z,20,e,s,gg)
+_(lYV,aZV)
+_(oVV,lYV)
+_(lKV,oVV)
+_(oJV,lKV)
+var t1V=_n('view')
+_rz(z,t1V,'class',21,e,s,gg)
+var e2V=_mz(z,'button',['class',22,'size',1,'style',2,'type',3],[],e,s,gg)
+var b3V=_oz(z,26,e,s,gg)
+_(e2V,b3V)
+_(t1V,e2V)
+_(oJV,t1V)
+_(oHV,oJV)
+_(cFV,oHV)
+var o4V=_mz(z,'view',['class',27,'style',1],[],e,s,gg)
+var x5V=_v()
+_(o4V,x5V)
+var o6V=function(c8V,f7V,h9V,gg){
+var cAW=_mz(z,'view',['bindtap',33,'class',1,'data-event-opts',2],[],c8V,f7V,gg)
+var oBW=_oz(z,36,c8V,f7V,gg)
+_(cAW,oBW)
+_(h9V,cAW)
+return h9V
+}
+x5V.wxXCkey=2
+_2z(z,31,o6V,e,s,gg,x5V,'item','index','index')
+_(cFV,o4V)
+var hGV=_v()
+_(cFV,hGV)
+if(_oz(z,37,e,s,gg)){hGV.wxVkey=1
+var lCW=_n('view')
+var aDW=_oz(z,38,e,s,gg)
+_(lCW,aDW)
+_(hGV,lCW)
+}
+else{hGV.wxVkey=2
+var tEW=_n('view')
+var eFW=_oz(z,39,e,s,gg)
+_(tEW,eFW)
+_(hGV,tEW)
+}
+hGV.wxXCkey=1
+_(r,cFV)
+return r
+}
+e_[x[42]]={f:m42,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -4583,6 +4722,9 @@ __wxAppCode__['pages/user-password/user-password.wxml']=$gwx('./pages/user-passw
 
 __wxAppCode__['pages/user-set/user-set.wxss']=undefined;    
 __wxAppCode__['pages/user-set/user-set.wxml']=$gwx('./pages/user-set/user-set.wxml');
+
+__wxAppCode__['pages/user-space/user-space.wxss']=undefined;    
+__wxAppCode__['pages/user-space/user-space.wxml']=$gwx('./pages/user-space/user-space.wxml');
 
 ;var __pageFrameEndTime__ = Date.now();
 (function() {
