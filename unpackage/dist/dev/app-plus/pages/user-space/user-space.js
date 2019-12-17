@@ -1,1 +1,2 @@
+setCssToHead([".",[1],"support-active { color: #FF4A6A; }\n",],undefined,{path:"./pages/user-space/user-space.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user-space/user-space.wxml') } }));

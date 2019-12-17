@@ -8,6 +8,6 @@
     ]
   },
   "usingComponents": {
-    "divider": "/components/common/divider"
+    "common-list": "/components/common/common-list"
   }
 }

@@ -33,7 +33,18 @@
 		</view>
 		
 		<template v-if="tabIndex === 0">
-			<view>首页</view>
+			<view class="p-3 border-bottom">
+				<view class="font-md">账号信息</view>
+				<view class="font">账号年龄：12个月</view>
+				<view class="font">账号ID：1</view>
+			</view>
+			<view class="p-3 border-bottom">
+				<view class="font-md">个人信息</view>
+				<view class="font">星座：巨蟹座</view>
+				<view class="font">职业：IT</view>
+				<view class="font">故乡：杭州</view>
+				<view class="font">情感：未婚</view>
+			</view>
 		</template>
 		<template v-else>
 			<view>帖子/动态</view>
@@ -43,6 +54,40 @@
 </template>
 
 <script>
+	const demo = [{
+		username: "昵称1",
+		userpic: "../../static/default.jpg",
+		newstime: "2019-10-20 下午04:30",
+		isFollow: false,
+		title: "我是标题",
+		titlepic: "../../static/bgimg/1.jpg",
+		support: {
+			// 顶操作 type 为 "support",
+			// 踩操作 type 为 "unsupport",
+			// 未操作 type 为 ""
+			type: "",
+			support_count: 0,
+			unsupport_count: 0
+		},
+		comment_count: 2,
+		share_num: 2
+	}, {
+		username: "昵称2",
+		userpic: "../../static/default.jpg",
+		newstime: "2019-10-20 下午04:30",
+		isFollow: false,
+		title: "我是标题",
+		titlepic: "",
+		support: {
+			type: "",
+			support_count: 1,
+			unsupport_count: 2
+		},
+		comment_count: 2,
+		share_num: 2
+	}];
+	
+	import commonList from '@/components/common/common-list.vue';
 	export default {
 		data() {
 			return {
@@ -58,6 +103,9 @@
 					}
 				],
 			}
+		},
+		components:{
+			commonList
 		},
 		methods: {
 			// tab 切换
