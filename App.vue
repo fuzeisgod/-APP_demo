@@ -3,8 +3,10 @@
 		onLaunch: function() {
 			console.log('App Launch')
 			// 检测更新
+			this.$U.update()
 			// 网络监听
 			// 初始化数据
+			this.$U.onNetwork()
 		},
 		onShow: function() {
 			console.log('App Show')

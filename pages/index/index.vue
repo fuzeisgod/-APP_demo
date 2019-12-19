@@ -204,6 +204,7 @@
 			loadMore
 		},
 		onLoad() {
+			console.log(this.$store.state.loginStatus)
 			uni.getSystemInfo({
 				success: res => {
 					// px
