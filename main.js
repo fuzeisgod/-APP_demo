@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App'
 import store from './store/index.js';
 
-Vue.prototype.$store = store
-
 Vue.config.productionTip = false
 
 // 引入全局组件
@@ -19,6 +17,21 @@ Vue.prototype.$C = $C
 // 挂载助手函数库
 import $U from './common/util.js';
 Vue.prototype.$U = $U
+
+// 权限验证操作
+Vue.prototype.checkAuth = (callback) => {
+	// 权限验证
+	if (!store.state.loginStatus) {
+		uni.showToast({
+			title: '请先登录'
+		});
+		// 微信小程序路径不识别.vue
+		return uni.navigateTo({
+			url: "/pages/login/login"
+		});
+	}
+	callback()
+}
 
 App.mpType = 'app'
 

@@ -74,9 +74,10 @@
 			},
 			// 关注
 			follow() {
-				console.log('点击了关注!')
-				// 通知父组件触发follow事件
-				this.$emit('follow', this.index)
+				this.checkAuth(()=>{
+					// 通知父组件触发follow事件
+					this.$emit('follow', this.index)
+				})		
 			},
 			// 进入详情页
 			openDetail() {
